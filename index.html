@@ -1,206 +1,282 @@
 <!DOCTYPE html>
 
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Lima Apps</title>
 
+<meta name="description"
+ content="Aplicativos Android modernos para produtividade, aprendizado e bem-estar.">
+
   <style>
-
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family:Arial;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
     }
 
-    body{
-      background:#0f172a;
-      color:white;
+    body {
+      background: #0f172a;
+      color: white;
     }
 
-    header{
-      padding:20px 8%;
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
+    header {
+      padding: 24px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
-    header h1{
-      color:#38bdf8;
+    header h1 {
+      color: #38bdf8;
+      font-size: 32px;
     }
 
-    .hero{
-      text-align:center;
-      padding:80px 8%;
+    .hero {
+      text-align: center;
+      padding: 90px 8%;
     }
 
-    .hero h2{
-      font-size:42px;
-      margin-bottom:20px;
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
     }
 
-    .hero p{
-      color:#cbd5e1;
-      max-width:700px;
-      margin:auto;
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      color: #cbd5e1;
+      font-size: 18px;
+      line-height: 1.7;
     }
 
-    .apps{
-      padding:60px 8%;
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-      gap:25px;
+    .apps {
+      padding: 60px 8%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
     }
 
-    .card{
-      background:#1e293b;
-      padding:25px;
-      border-radius:20px;
-      text-align:center;
-      transition:0.3s;
+    .card {
+      background: #1e293b;
+      padding: 28px;
+      border-radius: 22px;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
     }
 
-    .card:hover{
-      transform:translateY(-5px);
+    .card:hover {
+      transform: translateY(-6px);
     }
 
-    .app-logo{
-      width:90px;
-      height:90px;
-      border-radius:22px;
-      margin-bottom:18px;
+    .app-logo {
+      width: 90px;
+      height: 90px;
+      border-radius: 22px;
+      margin-bottom: 18px;
     }
 
-    .card h3{
-      margin-bottom:12px;
+    .card h3 {
+      margin-bottom: 14px;
+      font-size: 22px;
     }
 
-    .card p{
-      color:#cbd5e1;
-      margin-bottom:18px;
+    .card p {
+      color: #cbd5e1;
+      margin-bottom: 22px;
+      line-height: 1.5;
     }
 
-    .btn{
-      display:inline-block;
-      background:#38bdf8;
-      color:#020617;
-      padding:12px 18px;
-      border-radius:12px;
-      text-decoration:none;
-      font-weight:bold;
+    .btn {
+      display: inline-block;
+      background: #38bdf8;
+      color: #020617;
+      padding: 12px 20px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
     }
 
-    footer{
-      text-align:center;
-      padding:40px;
-      color:#94a3b8;
+    .btn:hover {
+      opacity: 0.85;
     }
 
+    .sobre {
+      padding: 60px 8%;
+      text-align: center;
+    }
+
+    .sobre h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .sobre p {
+      max-width: 800px;
+      margin: auto;
+      color: #cbd5e1;
+      line-height: 1.8;
+      font-size: 18px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      color: #94a3b8;
+    }
+
+    @media(max-width:700px) {
+
+      .hero h2 {
+        font-size: 34px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      header {
+        justify-content: center;
+      }
+
+    }
   </style>
 
 </head>
 
 <body>
 
-<header>
-  <h1>Lima Apps</h1>
-</header>
+  <header>
+    <h1>Lima Apps</h1>
+  </header>
 
-<section class="hero">
-  <h2>Aplicativos Android modernos e úteis</h2>
+  <section class="hero">
+
+```
+<h2>Aplicativos Android modernos e úteis</h2>
+
+<p>
+  Aplicativos focados em produtividade, aprendizado,
+  bem-estar e ferramentas úteis para o dia a dia.
+</p>
+```
+
+  </section>
+
+  <section class="apps">
+
+```
+<div class="card">
+
+  <img class="app-logo"
+    src="assets/agenda-recorrente.png"
+    alt="Agenda de Serviços Recorrentes">
+
+  <h3>Agenda de Serviços Recorrentes</h3>
 
   <p>
-    Aplicativos focados em produtividade, aprendizado,
-    bem-estar e ferramentas para o dia a dia.
+    Organize tarefas, serviços e compromissos recorrentes
+    de forma prática e eficiente.
   </p>
-</section>
 
-<section class="apps">
+  <a class="btn"
+    href="https://play.google.com/store/apps/details?id=com.edvilson.agendarecorrente&pcampaignid=web_share"
+    target="_blank">
+    Play Store
+  </a>
 
-  <div class="card">
-    <img class="app-logo" src="assets/agenda-recorrente.png">
+</div>
+
+<div class="card">
+
+  <img class="app-logo"
+    src="assets/cnh.png"
+    alt="CNH - Teórico e Prático">
+
+  <h3>CNH - Teórico e Prático</h3>
+
+  <p>
+    Simulados e conteúdos completos para estudar para
+    a prova da habilitação.
+  </p>
+
+  <a class="btn"
+    href="https://play.google.com/store/apps/details?id=com.lima.pratica&pcampaignid=web_share"
+    target="_blank">
+    Play Store
+  </a>
+
+</div>
+
+<div class="card">
+
+  <img class="app-logo"
+    src="assets/meu-pdf.png"
+    alt="Meu PDF">
+
+  <h3>Meu PDF</h3>
+
+  <p>
+    Ferramentas simples e eficientes para visualizar
+    e gerenciar arquivos PDF.
+  </p>
+
+  <a class="btn"
+    href="https://play.google.com/store/apps/details?id=br.com.limaapps.meupdf&pcampaignid=web_share"
+    target="_blank">
+    Play Store
+  </a>
+
+</div>
+
+<div class="card">
+
+  <img class="app-logo"
+    src="assets/white-noise.png"
+    alt="White Noise">
+
+  <h3>White Noise</h3>
+
+  <p>
+    Sons relaxantes para dormir melhor, aliviar o estresse
+    e melhorar a concentração.
+  </p>
+
+  <a class="btn"
+    href="https://play.google.com/store/apps/details?id=com.lima.alice&pcampaignid=web_share"
+    target="_blank">
+    Play Store
+  </a>
+
+</div>
+```
+
+  </section>
+
+  <section class="sobre">
 
 ```
-<h3>Agenda de Serviços Recorrentes</h3>
+<h2>Sobre a Lima Apps</h2>
 
 <p>
-  Organize tarefas e compromissos recorrentes.
+  A Lima Apps desenvolve aplicativos Android modernos,
+  leves e intuitivos, focados em produtividade,
+  aprendizado, entretenimento e bem-estar.
 </p>
-
-<a class="btn"
-   href="https://play.google.com/store/apps/developer?id=Edvilson+Lima&hl=pt_BR"
-   target="_blank">
-   Play Store
-</a>
 ```
 
-  </div>
+  </section>
 
-  <div class="card">
-    <img class="app-logo" src="assets/cnh.png">
-
-```
-<h3>CNH - Teórico e Prático</h3>
-
-<p>
-  Simulados e estudos para habilitação.
-</p>
-
-<a class="btn"
-   href="https://play.google.com/store/apps/developer?id=Edvilson+Lima&hl=pt_BR"
-   target="_blank">
-   Play Store
-</a>
-```
-
-  </div>
-
-  <div class="card">
-    <img class="app-logo" src="assets/meu-pdf.png">
-
-```
-<h3>Meu PDF</h3>
-
-<p>
-  Ferramentas práticas para arquivos PDF.
-</p>
-
-<a class="btn"
-   href="https://play.google.com/store/apps/developer?id=Edvilson+Lima&hl=pt_BR"
-   target="_blank">
-   Play Store
-</a>
-```
-
-  </div>
-
-  <div class="card">
-    <img class="app-logo" src="assets/white-noise.png">
-
-```
-<h3>White Noise</h3>
-
-<p>
-  Sons relaxantes para sono e concentração.
-</p>
-
-<a class="btn"
-   href="https://play.google.com/store/apps/developer?id=Edvilson+Lima&hl=pt_BR"
-   target="_blank">
-   Play Store
-</a>
-```
-
-  </div>
-
-</section>
-
-<footer>
-  © 2026 Lima Apps
-</footer>
+  <footer>
+    © 2026 Lima Apps - Todos os direitos reservados
+  </footer>
 
 </body>
+
 </html>
