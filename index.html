@@ -1,11 +1,238 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Lima Apps</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Lima Apps | Aplicativos Android</title>
+
+  <meta name="description" content="Aplicativos Android simples, úteis e modernos desenvolvidos pela Lima Apps." />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: #f8fafc;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 24px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h2 {
+      color: #38bdf8;
+    }
+
+    nav a {
+      color: #cbd5e1;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 15px;
+    }
+
+    .hero {
+      padding: 80px 8%;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      color: #cbd5e1;
+      max-width: 700px;
+      margin: 0 auto 30px;
+      font-size: 18px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #38bdf8;
+      color: #020617;
+      padding: 14px 24px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 8px;
+    }
+
+    .section {
+      padding: 60px 8%;
+    }
+
+    .section h2 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 35px;
+    }
+
+    .apps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: #1e293b;
+      border-radius: 20px;
+      padding: 28px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    }
+
+    .app-icon {
+      width: 80px;
+      height: 80px;
+      border-radius: 22px;
+      background: #334155;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 18px;
+      font-size: 36px;
+    }
+
+    .card h3 {
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      color: #cbd5e1;
+      margin-bottom: 20px;
+      font-size: 15px;
+    }
+
+    .about {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+      color: #cbd5e1;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 8%;
+      color: #94a3b8;
+      background: #020617;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      nav a {
+        margin: 8px;
+      }
+
+      .hero h1 {
+        font-size: 32px;
+      }
+    }
+  </style>
+
 </head>
+
 <body>
-  <h1>Bem-vindo aos meus aplicativos</h1>
-  <p>Em breve mais informações.</p>
+
+  <header>
+    <h2>Lima Apps</h2>
+    <nav>
+      <a href="#apps">Apps</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Aplicativos simples, úteis e modernos para o seu dia a dia</h1>
+    <p>
+      A Lima Apps desenvolve aplicativos Android focados em produtividade,
+      entretenimento, bem-estar e soluções práticas para usuários de todos os perfis.
+    </p>
+    <a class="btn" href="#apps">Conhecer aplicativos</a>
+  </section>
+
+  <section class="section" id="apps">
+    <h2>Meus Aplicativos</h2>
+
+```
+<div class="apps">
+
+  <div class="card">
+    <div class="app-icon">📅</div>
+    <h3>Agenda Recorrente</h3>
+    <p>
+      Organize compromissos e tarefas recorrentes de forma simples e prática.
+    </p>
+    <a class="btn" href="https://play.google.com/store/apps/details?id=com.edvilson.agendarecorrente" target="_blank">
+      Ver na Play Store
+    </a>
+  </div>
+
+  <div class="card">
+    <div class="app-icon">🧩</div>
+    <h3>Move Blocks</h3>
+    <p>
+      Um jogo rápido e divertido para testar sua habilidade de observação.
+    </p>
+    <a class="btn" href="#" target="_blank">
+      Em breve
+    </a>
+  </div>
+
+  <div class="card">
+    <div class="app-icon">🌙</div>
+    <h3>White Noise</h3>
+    <p>
+      Sons relaxantes para dormir melhor, relaxar e melhorar a concentração.
+    </p>
+    <a class="btn" href="#" target="_blank">
+      Em breve
+    </a>
+  </div>
+
+</div>
+```
+
+  </section>
+
+  <section class="section" id="sobre">
+    <h2>Sobre a Lima Apps</h2>
+    <p class="about">
+      A Lima Apps cria aplicativos Android com foco em simplicidade, utilidade e boa experiência de uso.
+      Nosso objetivo é desenvolver soluções leves, acessíveis e eficientes para o dia a dia.
+    </p>
+  </section>
+
+  <section class="section" id="contato">
+    <h2>Contato</h2>
+    <p class="about">
+      Para dúvidas, sugestões ou suporte, entre em contato pelo e-mail:
+      <br />
+      <strong>limaapps@hotmail.com</strong>
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2026 Lima Apps. Todos os direitos reservados.</p>
+  </footer>
+
 </body>
 </html>
