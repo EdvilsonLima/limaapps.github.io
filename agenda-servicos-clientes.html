@@ -6,7 +6,7 @@
 
   <title>Agenda de Serviços e Clientes</title>
 
-  <meta name="description" content="Organize agendamentos de serviços, orçamentos, recibos e lembretes em um unico aplicativo.">
+  <meta name="description" content="Organize clientes, agendamentos, tarefas, orçamentos, recibos e lembretes em um único aplicativo.">
 
   <style>
     * {
@@ -41,8 +41,10 @@
     .logo {
       color: #38bdf8;
       text-decoration: none;
-      font-size: 26px;
+      font-size: 24px;
       font-weight: 800;
+      max-width: 420px;
+      line-height: 1.2;
     }
 
     nav a {
@@ -65,20 +67,9 @@
         linear-gradient(180deg, #020617 0%, #0f172a 100%);
     }
 
-    .badge {
-      display: inline-block;
-      padding: 8px 16px;
-      border-radius: 999px;
-      color: #7dd3fc;
-      border: 1px solid rgba(56, 189, 248, 0.35);
-      background: rgba(15, 23, 42, 0.75);
-      margin-bottom: 24px;
-      font-size: 14px;
-    }
-
     .app-icon {
-      width: 116px;
-      height: 116px;
+      width: 128px;
+      height: 128px;
       border-radius: 28px;
       margin-bottom: 26px;
       box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
@@ -232,6 +223,11 @@
         gap: 14px;
       }
 
+      .logo {
+        font-size: 18px;
+        text-align: center;
+      }
+
       nav {
         text-align: center;
       }
@@ -264,21 +260,19 @@
 <body>
 
 <header>
-  <a class="logo" href="https://limaapps.com.br">Lima Apps</a>
+  <a class="logo" href="agenda-servicos-clientes.html">
+    Agenda de Serviços e Clientes
+  </a>
 
   <nav>
-    <a href="https://limaapps.com.br">Inicio</a>
+    <a href="https://limaapps.com.br">Página Inicial</a>
     <a href="#recursos">Recursos</a>
-    <a href="#publico">Para quem e</a>
-    <a href="https://limaapps.com.br/politica-agenda.html">Privacidade</a>
+    <a href="#publico">Público-Alvo</a>
+    <a href="https://limaapps.com.br/politica-agenda.html">Política de Privacidade</a>
   </nav>
 </header>
 
 <section class="hero">
-  <div class="badge">App para prestadores de serviço</div>
-
-  <br>
-
   <img class="app-icon" src="assets/agenda-recorrente.png" alt="Agenda de Serviços e Clientes">
 
   <h1>
@@ -286,23 +280,23 @@
   </h1>
 
   <p>
-    Controle agendamentos, clientes, tarefas, orçamentos, recibos e lembretes em um único aplicativo.
-    Ideal para profissionais autonomos e pequenas empresas que precisam de mais organização no dia a dia.
+    Organize clientes, agendamentos, tarefas, orçamentos, recibos e lembretes em um único aplicativo.
+    Ideal para profissionais autônomos e pequenas empresas que desejam mais organização, produtividade e controle sobre seus atendimentos.
   </p>
 
   <div class="actions">
     <a class="btn" href="https://play.google.com/store/apps/details?id=com.edvilson.agendarecorrente&pcampaignid=web_share" target="_blank">
-      Baixar na Play Store
+      Instalar Gratuitamente
     </a>
 
     <a class="btn btn-outline" href="#recursos">
-      Ver recursos
+      Ver Recursos
     </a>
   </div>
 </section>
 
 <section class="showcase">
-  <img src="assets/agenda-print-inicio.png" alt="Tela inicial do app Agenda de Serviços e Clientes">
+  <img src="assets/print_inicio.png" alt="Tela inicial do app Agenda de Serviços e Clientes">
 </section>
 
 <section class="section" id="recursos">
@@ -316,12 +310,12 @@
   <div class="grid">
     <div class="card">
       <h3>Agendamentos</h3>
-      <p>Controle atendimentos, datas importantes e compromissos recorrentes com mais organização.</p>
+      <p>Controle horários de agendamentos e lembretes de recontato com clientes.</p>
     </div>
 
     <div class="card">
       <h3>Clientes organizados</h3>
-      <p>Mantenha histórico, contatos e informações importantes sempre acessiveis.</p>
+      <p>Mantenha histórico, contatos e informações importantes sempre acessíveis.</p>
     </div>
 
     <div class="card">
@@ -330,8 +324,8 @@
     </div>
 
     <div class="card">
-      <h3>Orcamentos e recibos</h3>
-      <p>Crie documentos simples para enviar ao cliente com mais agilidade.</p>
+      <h3>Orçamentos e recibos</h3>
+      <p>Documentos personalizados que transmitem profissionalismo para enviar ao cliente.</p>
     </div>
 
     <div class="card">
@@ -341,7 +335,7 @@
 
     <div class="card">
       <h3>Mais produtividade</h3>
-      <p>Tenha uma visão melhor da sua agenda e economize tempo na administracao do negocio.</p>
+      <p>Tenha uma visão melhor da sua agenda e economize tempo na administração do negócio.</p>
     </div>
   </div>
 </section>
@@ -355,36 +349,36 @@
 
   <div class="grid">
     <div class="card">
-      <h3>Tecnicos</h3>
-      <p>Ar-condicionado, informatica, manutenção, instalação e assistencia tecnica.</p>
+      <h3>Técnicos</h3>
+      <p>Ar-condicionado, informática, manutenção, instalação e assistência técnica.</p>
     </div>
 
     <div class="card">
       <h3>Prestadores de serviço</h3>
-      <p>Eletricistas, encanadores, jardineiros, diaristas, pintores e profissionais autonomos.</p>
+      <p>Eletricistas, encanadores, jardineiros, diaristas, pintores e profissionais autônomos.</p>
     </div>
 
     <div class="card">
       <h3>Pequenas empresas</h3>
-      <p>Negocios que precisam controlar agenda, clientes e retornos sem sistemas complexos.</p>
+      <p>Negócios que precisam controlar agenda, clientes e retornos sem sistemas complexos.</p>
     </div>
   </div>
 </section>
 
 <section class="cta">
-  <h2>Mais organizacao, mais tempo e mais clientes satisfeitos</h2>
+  <h2>Transforme a gestão dos seus clientes e serviços</h2>
 
   <p>
-    Comece agora a organizar seus atendimentos com uma ferramenta simples, leve e pensada para o dia a dia.
+    Tenha mais controle sobre seus atendimentos, reduza esquecimentos e mantenha um relacionamento mais próximo com seus clientes.
   </p>
 
   <div class="actions">
     <a class="btn" href="https://play.google.com/store/apps/details?id=com.edvilson.agendarecorrente&pcampaignid=web_share" target="_blank">
-      Instalar aplicativo
+      Instalar Aplicativo
     </a>
 
     <a class="btn btn-blue" href="https://limaapps.com.br/politica-agenda.html">
-      Politica de Privacidade
+      Política de Privacidade
     </a>
   </div>
 </section>
