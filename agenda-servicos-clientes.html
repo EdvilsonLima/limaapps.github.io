@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Agenda de Serviços Recorrentes - Lima Apps</title>
+  <title>Agenda de Serviços e Clientes</title>
 
-  <meta name="description" content="Organize serviços, tarefas e compromissos recorrentes com o app Agenda de Serviços Recorrentes.">
+  <meta name="description" content="Organize agendamentos de serviços, orçamentos, recibos e lembretes em um unico aplicativo.">
 
   <style>
     * {
@@ -16,9 +16,13 @@
       font-family: Arial, Helvetica, sans-serif;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       background: #020617;
-      color: white;
+      color: #f8fafc;
       line-height: 1.7;
     }
 
@@ -27,44 +31,80 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      background: rgba(2, 6, 23, 0.9);
+      border-bottom: 1px solid rgba(148, 163, 184, 0.12);
+      position: sticky;
+      top: 0;
+      z-index: 10;
     }
 
-    header a {
+    .logo {
       color: #38bdf8;
       text-decoration: none;
-      font-weight: bold;
+      font-size: 26px;
+      font-weight: 800;
+    }
+
+    nav a {
+      color: #cbd5e1;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
     }
 
     .hero {
-      padding: 90px 8%;
+      padding: 110px 8% 70px;
       text-align: center;
       background:
-        radial-gradient(circle at top left, rgba(56,189,248,0.25), transparent 35%),
-        radial-gradient(circle at top right, rgba(59,130,246,0.18), transparent 35%);
+        radial-gradient(circle at top left, rgba(0, 76, 173, 0.38), transparent 35%),
+        radial-gradient(circle at top right, rgba(255, 122, 0, 0.28), transparent 35%),
+        linear-gradient(180deg, #020617 0%, #0f172a 100%);
     }
 
-    .app-logo {
-      width: 120px;
-      height: 120px;
-      border-radius: 28px;
+    .badge {
+      display: inline-block;
+      padding: 8px 16px;
+      border-radius: 999px;
+      color: #7dd3fc;
+      border: 1px solid rgba(56, 189, 248, 0.35);
+      background: rgba(15, 23, 42, 0.75);
       margin-bottom: 24px;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+      font-size: 14px;
+    }
+
+    .app-icon {
+      width: 116px;
+      height: 116px;
+      border-radius: 28px;
+      margin-bottom: 26px;
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
     }
 
     .hero h1 {
-      font-size: 52px;
-      margin-bottom: 20px;
+      max-width: 980px;
+      margin: auto;
+      font-size: 58px;
+      line-height: 1.08;
+      letter-spacing: -1.5px;
+    }
+
+    .hero h1 span {
+      color: #ff7a00;
     }
 
     .hero p {
-      max-width: 760px;
-      margin: auto;
+      max-width: 780px;
+      margin: 26px auto 0;
       color: #cbd5e1;
       font-size: 20px;
     }
 
     .actions {
-      margin-top: 34px;
+      margin-top: 36px;
       display: flex;
       justify-content: center;
       gap: 14px;
@@ -73,88 +113,149 @@
 
     .btn {
       display: inline-block;
-      background: #38bdf8;
-      color: #020617;
+      background: #ff7a00;
+      color: white;
       padding: 14px 22px;
       border-radius: 14px;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 800;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      opacity: 0.9;
+    }
+
+    .btn-blue {
+      background: #004cad;
     }
 
     .btn-outline {
-      background: transparent;
+      background: rgba(15, 23, 42, 0.75);
       color: #e2e8f0;
-      border: 1px solid rgba(148,163,184,0.4);
+      border: 1px solid rgba(148, 163, 184, 0.35);
+    }
+
+    .showcase {
+      padding: 60px 8%;
+      background: #0f172a;
+      text-align: center;
+    }
+
+    .showcase img {
+      width: 100%;
+      max-width: 1050px;
+      border-radius: 28px;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.42);
     }
 
     .section {
-      padding: 70px 8%;
-      max-width: 1150px;
+      padding: 80px 8%;
+      max-width: 1180px;
       margin: auto;
     }
 
     .section h2 {
       text-align: center;
-      font-size: 36px;
-      margin-bottom: 35px;
+      font-size: 40px;
+      margin-bottom: 18px;
     }
 
-    .features {
+    .section-intro {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto 42px;
+      color: #cbd5e1;
+      font-size: 18px;
+    }
+
+    .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
       gap: 24px;
     }
 
     .card {
       background: linear-gradient(180deg, #1e293b, #111827);
       padding: 28px;
-      border-radius: 22px;
-      border: 1px solid rgba(148,163,184,0.12);
-      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+      border-radius: 24px;
+      border: 1px solid rgba(148, 163, 184, 0.12);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
     }
 
     .card h3 {
       color: #38bdf8;
-      margin-bottom: 12px;
       font-size: 22px;
+      margin-bottom: 12px;
     }
 
     .card p {
       color: #cbd5e1;
     }
 
-    .highlight {
+    .target {
       background: #0f172a;
-      text-align: center;
-      padding: 70px 8%;
     }
 
-    .highlight p {
-      max-width: 800px;
-      margin: auto;
+    .cta {
+      padding: 90px 8%;
+      text-align: center;
+      background:
+        radial-gradient(circle at center, rgba(255, 122, 0, 0.20), transparent 35%),
+        #020617;
+    }
+
+    .cta h2 {
+      font-size: 42px;
+      margin-bottom: 18px;
+    }
+
+    .cta p {
       color: #cbd5e1;
+      max-width: 740px;
+      margin: auto;
       font-size: 18px;
     }
 
     footer {
       text-align: center;
-      padding: 40px;
+      padding: 42px 8%;
       color: #94a3b8;
-      border-top: 1px solid rgba(148,163,184,0.12);
+      border-top: 1px solid rgba(148, 163, 184, 0.12);
+      background: #020617;
     }
 
-    @media(max-width:700px) {
+    @media(max-width: 760px) {
       header {
         flex-direction: column;
         gap: 14px;
       }
 
+      nav {
+        text-align: center;
+      }
+
+      nav a {
+        margin: 0 8px;
+        font-size: 14px;
+      }
+
+      .hero {
+        padding: 80px 8% 60px;
+      }
+
       .hero h1 {
-        font-size: 36px;
+        font-size: 38px;
       }
 
       .hero p {
         font-size: 16px;
+      }
+
+      .section h2,
+      .cta h2 {
+        font-size: 32px;
       }
     }
   </style>
@@ -163,25 +264,35 @@
 <body>
 
 <header>
-  <a href="https://limaapps.com.br">← Lima Apps</a>
-  <a href="https://limaapps.com.br/politica-agenda.html">Política de Privacidade</a>
+  <a class="logo" href="https://limaapps.com.br">Lima Apps</a>
+
+  <nav>
+    <a href="https://limaapps.com.br">Inicio</a>
+    <a href="#recursos">Recursos</a>
+    <a href="#publico">Para quem e</a>
+    <a href="https://limaapps.com.br/politica-agenda.html">Privacidade</a>
+  </nav>
 </header>
 
 <section class="hero">
-  <img class="app-logo" src="assets/agenda-recorrente.png" alt="Agenda de Serviços Recorrentes">
+  <div class="badge">App para prestadores de serviço</div>
 
-  <h1>Agenda de Serviços Recorrentes</h1>
+  <br>
+
+  <img class="app-icon" src="assets/agenda-recorrente.png" alt="Agenda de Serviços e Clientes">
+
+  <h1>
+    Organize seus <span>serviços e clientes</span> com praticidade
+  </h1>
 
   <p>
-    Organize tarefas, serviços e compromissos que se repetem com praticidade.
-    Ideal para quem precisa controlar rotinas, atendimentos, manutenções e lembretes recorrentes.
+    Controle agendamentos, clientes, tarefas, orçamentos, recibos e lembretes em um único aplicativo.
+    Ideal para profissionais autonomos e pequenas empresas que precisam de mais organização no dia a dia.
   </p>
 
   <div class="actions">
-    <a class="btn"
-       href="https://play.google.com/store/apps/details?id=com.edvilson.agendarecorrente&pcampaignid=web_share"
-       target="_blank">
-       Baixar na Play Store
+    <a class="btn" href="https://play.google.com/store/apps/details?id=com.edvilson.agendarecorrente&pcampaignid=web_share" target="_blank">
+      Baixar na Play Store
     </a>
 
     <a class="btn btn-outline" href="#recursos">
@@ -190,57 +301,92 @@
   </div>
 </section>
 
+<section class="showcase">
+  <img src="assets/agenda-print-inicio.png" alt="Tela inicial do app Agenda de Serviços e Clientes">
+</section>
+
 <section class="section" id="recursos">
-  <h2>Principais recursos</h2>
+  <h2>Tudo em um só lugar</h2>
 
-  <div class="features">
+  <p class="section-intro">
+    O Agenda de Serviços e Clientes foi criado para simplificar a rotina de quem atende clientes,
+    realiza serviços e precisa acompanhar tudo com clareza.
+  </p>
 
+  <div class="grid">
     <div class="card">
-      <h3>Compromissos recorrentes</h3>
-      <p>
-        Cadastre serviços e tarefas que acontecem com frequência e mantenha tudo organizado.
-      </p>
+      <h3>Agendamentos</h3>
+      <p>Controle atendimentos, datas importantes e compromissos recorrentes com mais organização.</p>
     </div>
 
     <div class="card">
-      <h3>Organização simples</h3>
-      <p>
-        Interface prática para acompanhar seus compromissos sem complicação.
-      </p>
+      <h3>Clientes organizados</h3>
+      <p>Mantenha histórico, contatos e informações importantes sempre acessiveis.</p>
     </div>
 
     <div class="card">
-      <h3>Ações rápidas</h3>
-      <p>
-        Facilite contatos por telefone, SMS ou WhatsApp quando necessário.
-      </p>
+      <h3>Serviços</h3>
+      <p>Acompanhe serviços realizados, confirme atendimentos e reduza esquecimentos.</p>
     </div>
 
     <div class="card">
-      <h3>Uso no dia a dia</h3>
-      <p>
-        Perfeito para profissionais autônomos, prestadores de serviço e controle de rotinas.
-      </p>
+      <h3>Orcamentos e recibos</h3>
+      <p>Crie documentos simples para enviar ao cliente com mais agilidade.</p>
     </div>
 
+    <div class="card">
+      <h3>Lembretes</h3>
+      <p>Receba alertas para entrar em contato com clientes no momento certo.</p>
+    </div>
+
+    <div class="card">
+      <h3>Mais produtividade</h3>
+      <p>Tenha uma visão melhor da sua agenda e economize tempo na administracao do negocio.</p>
+    </div>
   </div>
 </section>
 
-<section class="highlight">
-  <h2>Feito para simplificar sua rotina</h2>
+<section class="section target" id="publico">
+  <h2>Para quem é este app?</h2>
 
-  <p>
-    O Agenda de Serviços Recorrentes ajuda você a manter o controle de atividades repetitivas,
-    reduzindo esquecimentos e facilitando o acompanhamento dos seus compromissos.
+  <p class="section-intro">
+    Perfeito para profissionais que precisam organizar clientes, retornos, serviços e atendimentos.
   </p>
 
-  <br>
+  <div class="grid">
+    <div class="card">
+      <h3>Tecnicos</h3>
+      <p>Ar-condicionado, informatica, manutenção, instalação e assistencia tecnica.</p>
+    </div>
 
-  <a class="btn"
-     href="https://play.google.com/store/apps/details?id=com.edvilson.agendarecorrente&pcampaignid=web_share"
-     target="_blank">
-     Instalar aplicativo
-  </a>
+    <div class="card">
+      <h3>Prestadores de serviço</h3>
+      <p>Eletricistas, encanadores, jardineiros, diaristas, pintores e profissionais autonomos.</p>
+    </div>
+
+    <div class="card">
+      <h3>Pequenas empresas</h3>
+      <p>Negocios que precisam controlar agenda, clientes e retornos sem sistemas complexos.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Mais organizacao, mais tempo e mais clientes satisfeitos</h2>
+
+  <p>
+    Comece agora a organizar seus atendimentos com uma ferramenta simples, leve e pensada para o dia a dia.
+  </p>
+
+  <div class="actions">
+    <a class="btn" href="https://play.google.com/store/apps/details?id=com.edvilson.agendarecorrente&pcampaignid=web_share" target="_blank">
+      Instalar aplicativo
+    </a>
+
+    <a class="btn btn-blue" href="https://limaapps.com.br/politica-agenda.html">
+      Politica de Privacidade
+    </a>
+  </div>
 </section>
 
 <footer>
