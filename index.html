@@ -3,19 +3,19 @@
 <html lang="pt-BR">
 
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QWQBQJ1LEJ"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QWQBQJ1LEJ"></script>
 
-<script>
-window.dataLayer = window.dataLayer || [];
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-function gtag(){
-  dataLayer.push(arguments);
-}
+    function gtag() {
+      dataLayer.push(arguments);
+    }
 
-gtag('js', new Date());
+    gtag('js', new Date());
 
-gtag('config', 'G-QWQBQJ1LEJ');
-</script>
+    gtag('config', 'G-QWQBQJ1LEJ');
+  </script>
 
 <head>
   <meta charset="UTF-8">
@@ -23,8 +23,8 @@ gtag('config', 'G-QWQBQJ1LEJ');
 
   <title>Lima Apps | Aplicativos Android</title>
 
-<meta name="description"
- content="Aplicativos Android modernos que atendem as suas necessidades.">
+  <meta name="description"
+    content="Aplicativos Android modernos que atendem as suas necessidades.">
 
   <style>
     * {
@@ -155,6 +155,7 @@ gtag('config', 'G-QWQBQJ1LEJ');
       text-decoration: none;
       font-weight: 800;
       transition: 0.3s;
+      border: none;
     }
 
     .btn:hover {
@@ -166,6 +167,13 @@ gtag('config', 'G-QWQBQJ1LEJ');
       background: rgba(15, 23, 42, 0.75);
       color: #e2e8f0;
       border: 1px solid rgba(148, 163, 184, 0.35);
+    }
+
+    .card-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: center;
     }
 
     .section-title {
@@ -311,33 +319,31 @@ gtag('config', 'G-QWQBQJ1LEJ');
   <header>
     <a class="logo" href="https://limaapps.com.br">Lima Apps</a>
 
-<nav>
-  <a href="#apps">Apps</a>
-  <a href="https://limaapps.com.br/politicas.html">Políticas</a>
-  <a href="#sobre">Sobre</a>
-  <a href="mailto:limaapps@hotmail.com">Contato</a>
-</nav>
-
+    <nav>
+      <a href="#apps">Apps</a>
+      <a href="https://limaapps.com.br/politicas.html">Políticas</a>
+      <a href="#sobre">Sobre</a>
+      <a href="mailto:limaapps@hotmail.com">Contato</a>
+    </nav>
   </header>
 
   <section class="hero">
     <div class="badge">Aplicativos Android independentes</div>
 
-<h1>
-  Apps <span> modernos e úteis</span> para o dia a dia
-</h1>
+    <h1>
+      Apps <span> modernos e úteis</span> para o dia a dia
+    </h1>
 
-<p>
-  A Lima Apps desenvolve soluções Android leves, intuitivas e práticas.
-</p>
+    <p>
+      A Lima Apps desenvolve soluções Android leves, intuitivas e práticas.
+    </p>
 
-<div class="hero-actions">
-  <a class="btn" href="#apps">Conhecer aplicativos</a>
-  <a class="btn btn-outline" href="https://limaapps.com.br/politicas.html">
-    Políticas de Privacidade
-  </a>
-</div>
-
+    <div class="hero-actions">
+      <a class="btn" href="#apps">Conhecer aplicativos</a>
+      <a class="btn btn-outline" href="https://limaapps.com.br/politicas.html">
+        Políticas de Privacidade
+      </a>
+    </div>
   </section>
 
   <section class="section-title" id="apps">
@@ -347,84 +353,100 @@ gtag('config', 'G-QWQBQJ1LEJ');
 
   <section class="apps">
 
-<div class="card">
-  <img class="app-logo" src="assets/agenda-recorrente.png" alt="Agenda de Serviços e Clientes">
+    <div class="card">
+      <img class="app-logo" src="assets/agenda-recorrente.png" alt="Agenda de Serviços e Clientes">
 
-  <h3>Agenda de Serviços e Clientes</h3>
+      <h3>Agenda de Serviços e Clientes</h3>
 
-  <p>
-    Organize seus agendamentos de serviços
-    de forma prática e eficiente.
-  </p>
+      <p>
+        Organize seus agendamentos de serviços
+        de forma prática e eficiente.
+      </p>
 
-  <a class="btn"
-    href="https://play.google.com/store/apps/details?id=com.edvilson.agendarecorrente&pcampaignid=web_share"
-    target="_blank">
-    Ver na Play Store
-  </a>
-</div>
+      <div class="card-actions">
+        <a class="btn"
+          href="https://play.google.com/store/apps/details?id=com.edvilson.agendarecorrente&pcampaignid=web_share"
+          target="_blank"
+          rel="noopener noreferrer">
+          Ver na Play Store
+        </a>
+      </div>
+    </div>
 
-<div class="card">
-  <img class="app-logo" src="assets/cnh.png" alt="CNH - Teórico e Prático">
+    <div class="card">
+      <img class="app-logo" src="assets/cnh.png" alt="CNH - Teórico e Prático">
 
-  <h3>CNH - Teórico e Prático</h3>
+      <h3>CNH - Teórico e Prático</h3>
 
-  <p>
-    Estude para os exames Prático e Teórico do Detran,
-    faça simulados e seja aprovado.
-  </p>
+      <p>
+        Estude para os exames Prático e Teórico do Detran,
+        faça simulados e seja aprovado.
+      </p>
 
-  <a class="btn"
-    href="https://play.google.com/store/apps/details?id=com.lima.pratica&pcampaignid=web_share"
-    target="_blank">
-    Ver na Play Store
-  </a>
-</div>
+      <div class="card-actions">
+        <a class="btn"
+          href="https://play.google.com/store/apps/details?id=com.lima.pratica&pcampaignid=web_share"
+          target="_blank"
+          rel="noopener noreferrer">
+          Ver na Play Store
+        </a>
+      </div>
+    </div>
 
-<div class="card">
-  <img class="app-logo" src="assets/meu-pdf.png" alt="Meu PDF">
+    <div class="card">
+      <img class="app-logo" src="assets/meu-pdf.png" alt="PDF Studio">
 
-  <h3>PDF Studio</h3>
+      <h3>PDF Studio</h3>
 
-  <p>
-    Ferramentas simples e eficientes para visualizar
-    e gerenciar arquivos PDF.
-  </p>
+      <p>
+        Ferramentas simples e eficientes para visualizar
+        e gerenciar arquivos PDF.
+      </p>
 
-  <a class="btn"
-    href="https://play.google.com/store/apps/details?id=br.com.limaapps.meupdf&pcampaignid=web_share"
-    target="_blank">
-    Ver na Play Store
-  </a>
-</div>
+      <div class="card-actions">
+        <a class="btn"
+          href="https://play.google.com/store/apps/details?id=br.com.limaapps.meupdf&pcampaignid=web_share"
+          target="_blank"
+          rel="noopener noreferrer">
+          Ver na Play Store
+        </a>
+      </div>
+    </div>
 
-<div class="card">
-  <img class="app-logo" src="assets/white-noise.png" alt="White Noise">
+    <div class="card">
+      <img class="app-logo" src="assets/babysleep.png" alt="BabySleep: Ruído Branco">
 
-  <h3>White Noise</h3>
+      <h3>BabySleep: Ruído Branco</h3>
 
-  <p>
-    Sons relaxantes para dormir melhor, aliviar o estresse
-    e melhorar a concentração.
-  </p>
+      <p>
+        Ruído branco e sons relaxantes para ajudar seu bebê
+        a dormir melhor, mesmo com a tela bloqueada.
+      </p>
 
-  <a class="btn"
-    href="https://play.google.com/store/apps/details?id=com.lima.alice&pcampaignid=web_share"
-    target="_blank">
-    Ver na Play Store
-  </a>
-</div>
+      <div class="card-actions">
+        <a class="btn"
+          href="https://play.google.com/store/apps/details?id=com.lima.alice&pcampaignid=web_share"
+          target="_blank"
+          rel="noopener noreferrer">
+          Ver na Play Store
+        </a>
+
+        <a class="btn btn-outline"
+          href="https://limaapps.com.br/politica-babysleep.html">
+          Política de Privacidade
+        </a>
+      </div>
+    </div>
 
   </section>
 
   <section class="why" id="sobre">
     <h2>Sobre nós</h2>
 
-<p>
-  Criamos aplicativos com a finalidade de facilitar o dia a dia dos nossos usuários,
-  práticos de usar e com visual moderno.
-</p>
-
+    <p>
+      Criamos aplicativos com a finalidade de facilitar o dia a dia dos nossos usuários,
+      práticos de usar e com visual moderno.
+    </p>
   </section>
 
   <footer class="footer">
@@ -434,8 +456,7 @@ gtag('config', 'G-QWQBQJ1LEJ');
       <a href="mailto:limaapps@hotmail.com">Contato</a>
     </div>
 
-<p>© 2026 Lima Apps - Todos os direitos reservados</p>
-
+    <p>© 2026 Lima Apps - Todos os direitos reservados</p>
   </footer>
 
 </body>
