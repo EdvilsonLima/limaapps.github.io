@@ -676,8 +676,7 @@
     ========================== */
 
     #apps {
-      background:
-        #070d1d;
+      background: #070d1d;
     }
 
 
@@ -693,75 +692,136 @@
           )
         );
 
-      gap: 24px;
+      gap: 28px;
     }
 
+
+    /* =========================
+       CARD DO APLICATIVO
+    ========================== */
 
     .app-card {
       display: flex;
 
-      flex-direction:
-        column;
+      flex-direction: column;
 
-      background:
-        #0f172a;
+      overflow: hidden;
+
+      background: #0f172a;
 
       border:
         1px solid
         #1e293b;
 
-      border-radius:
-        18px;
-
-      padding:
-        28px;
+      border-radius: 20px;
 
       transition:
-        transform 0.25s ease,
-        border-color 0.25s ease,
-        box-shadow 0.25s ease;
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
     }
 
 
     .app-card:hover {
       transform:
-        translateY(-5px);
+        translateY(-7px);
 
       border-color:
         rgba(
           56,
           189,
           248,
-          0.5
+          0.55
         );
 
       box-shadow:
         0
-        20px
-        40px
+        24px
+        50px
         rgba(
           0,
           0,
           0,
-          0.25
+          0.32
         );
     }
 
 
-    .app-icon {
-      width: 82px;
-      height: 82px;
+    /* =========================
+       IMAGEM PROMOCIONAL
+    ========================== */
 
-      margin-bottom:
-        22px;
+    .app-promo-wrapper {
+      position: relative;
 
-      border-radius:
-        18px;
+      width: 100%;
+
+      aspect-ratio: 16 / 10;
+
+      overflow: hidden;
+
+      background: #020617;
+    }
+
+
+    .app-promo {
+      width: 100%;
+      height: 100%;
 
       object-fit: cover;
 
-      background:
-        #1e293b;
+      transition:
+        transform 0.4s ease;
+    }
+
+
+    .app-card:hover .app-promo {
+      transform:
+        scale(1.035);
+    }
+
+
+    /* =========================
+       CONTEÚDO DO CARD
+    ========================== */
+
+    .app-content {
+      display: flex;
+
+      flex-direction: column;
+
+      flex-grow: 1;
+
+      padding: 26px;
+    }
+
+
+    /* =========================
+       ÍCONE E CATEGORIA
+    ========================== */
+
+    .app-meta {
+      display: flex;
+
+      align-items: center;
+
+      gap: 14px;
+
+      margin-bottom: 20px;
+    }
+
+
+    .app-icon {
+      width: 58px;
+      height: 58px;
+
+      flex-shrink: 0;
+
+      border-radius: 14px;
+
+      object-fit: cover;
+
+      background: #1e293b;
 
       box-shadow:
         0
@@ -771,18 +831,15 @@
           0,
           0,
           0,
-          0.25
+          0.3
         );
     }
 
 
     .app-category {
-      margin-bottom:
-        8px;
-
       color: #38bdf8;
 
-      font-size: 0.78rem;
+      font-size: 0.75rem;
 
       font-weight: 700;
 
@@ -794,11 +851,14 @@
     }
 
 
-    .app-card h3 {
-      margin-bottom:
-        12px;
+    /* =========================
+       NOME DO APP
+    ========================== */
 
-      font-size: 1.25rem;
+    .app-card h3 {
+      margin-bottom: 10px;
+
+      font-size: 1.3rem;
 
       line-height: 1.35;
 
@@ -806,43 +866,96 @@
     }
 
 
-    .app-card p {
-      flex-grow: 1;
+    /* =========================
+       BENEFÍCIO PRINCIPAL
+    ========================== */
 
-      margin-bottom:
-        25px;
+    .app-benefit {
+      margin-bottom: 12px;
 
-      color: #94a3b8;
+      color: #e2e8f0;
 
-      font-size: 0.95rem;
+      font-size: 1.03rem;
+
+      font-weight: 700;
+
+      line-height: 1.5;
     }
 
 
+    /* =========================
+       DESCRIÇÃO
+    ========================== */
+
+    .app-description {
+      flex-grow: 1;
+
+      margin-bottom: 24px;
+
+      color: #94a3b8;
+
+      font-size: 0.94rem;
+
+      line-height: 1.65;
+    }
+
+
+    /* =========================
+       BOTÃO GOOGLE PLAY
+    ========================== */
+
     .play-button {
-      width:
-        fit-content;
+      width: 100%;
 
-      display:
-        inline-flex;
+      min-height: 48px;
 
-      align-items:
-        center;
+      display: inline-flex;
 
-      gap: 8px;
+      align-items: center;
 
-      color: #7dd3fc;
+      justify-content: center;
+
+      gap: 10px;
+
+      padding:
+        0
+        20px;
+
+      border-radius: 10px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #38bdf8,
+          #2563eb
+        );
+
+      color: #ffffff;
 
       font-size: 0.9rem;
 
       font-weight: 700;
 
       transition:
-        color 0.2s ease;
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
     }
 
 
     .play-button:hover {
-      color: #ffffff;
+      transform:
+        translateY(-2px);
+
+      box-shadow:
+        0
+        10px
+        25px
+        rgba(
+          37,
+          99,
+          235,
+          0.3
+        );
     }
 
 
@@ -879,15 +992,13 @@
 
 
     .benefit {
-      padding:
-        30px;
+      padding: 30px;
 
       border:
         1px solid
         #1e293b;
 
-      border-radius:
-        16px;
+      border-radius: 16px;
 
       background:
         rgba(
@@ -903,18 +1014,15 @@
       width: 46px;
       height: 46px;
 
-      margin-bottom:
-        18px;
+      margin-bottom: 18px;
 
       display: flex;
 
       align-items: center;
 
-      justify-content:
-        center;
+      justify-content: center;
 
-      border-radius:
-        12px;
+      border-radius: 12px;
 
       background:
         rgba(
@@ -931,8 +1039,7 @@
 
 
     .benefit h3 {
-      margin-bottom:
-        10px;
+      margin-bottom: 10px;
 
       font-size: 1.1rem;
     }
@@ -950,8 +1057,7 @@
     ========================== */
 
     #sobre {
-      background:
-        #070d1d;
+      background: #070d1d;
     }
 
 
@@ -960,11 +1066,9 @@
 
       margin: 0 auto;
 
-      padding:
-        55px;
+      padding: 55px;
 
-      text-align:
-        center;
+      text-align: center;
 
       background:
         linear-gradient(
@@ -992,8 +1096,7 @@
           0.2
         );
 
-      border-radius:
-        22px;
+      border-radius: 22px;
     }
 
 
@@ -1027,13 +1130,17 @@
 
 
     .about-box p {
-      max-width: 700px;
+      max-width:
+        700px;
 
-      margin: 0 auto;
+      margin:
+        0 auto;
 
-      color: #94a3b8;
+      color:
+        #94a3b8;
 
-      font-size: 1.05rem;
+      font-size:
+        1.05rem;
     }
 
 
@@ -1061,13 +1168,15 @@
 
 
     .cta p {
-      max-width: 600px;
+      max-width:
+        600px;
 
       margin:
         0 auto
         30px;
 
-      color: #94a3b8;
+      color:
+        #94a3b8;
     }
 
 
@@ -1099,23 +1208,29 @@
       justify-content:
         space-between;
 
-      gap: 30px;
+      gap:
+        30px;
     }
 
 
     .footer-logo {
-      display: flex;
+      display:
+        flex;
 
       align-items:
         center;
 
-      gap: 10px;
+      gap:
+        10px;
     }
 
 
     .footer-logo img {
-      width: 40px;
-      height: 40px;
+      width:
+        40px;
+
+      height:
+        40px;
 
       object-fit:
         contain;
@@ -1153,12 +1268,14 @@
 
 
     .footer-links {
-      display: flex;
+      display:
+        flex;
 
       flex-wrap:
         wrap;
 
-      gap: 22px;
+      gap:
+        22px;
     }
 
 
@@ -1222,7 +1339,8 @@
 
 
       nav {
-        gap: 18px;
+        gap:
+          18px;
       }
 
 
@@ -1246,8 +1364,11 @@
 
 
       .logo-icon {
-        width: 40px;
-        height: 40px;
+        width:
+          40px;
+
+        height:
+          40px;
       }
 
 
@@ -1260,7 +1381,8 @@
       nav a:not(
         :last-child
       ) {
-        display: none;
+        display:
+          none;
       }
 
 
@@ -1273,8 +1395,11 @@
 
 
       .hero-brand-icon {
-        width: 78px;
-        height: 78px;
+        width:
+          78px;
+
+        height:
+          78px;
       }
 
 
@@ -1304,7 +1429,7 @@
       }
 
 
-      .app-card {
+      .app-content {
         padding:
           24px;
       }
@@ -1398,6 +1523,7 @@
         </a>
 
       </nav>
+
 
     </div>
 
@@ -1546,345 +1672,515 @@
 
 
 
-          <!-- AGENDA -->
+          <!-- =========================
+               AGENDA
+          ========================== -->
 
           <article class="app-card">
 
 
-            <img
-              src="assets/agenda-recorrente.png"
-              alt="Ícone do aplicativo Agenda de Serviços e Clientes"
-              class="app-icon"
-              loading="lazy">
+            <div class="app-promo-wrapper">
+
+              <img
+                src="assets/print-agenda.png"
+                alt="Conheça o aplicativo Agenda de Serviços e Clientes"
+                class="app-promo"
+                loading="lazy">
+
+            </div>
 
 
-            <span class="app-category">
-
-              Produtividade
-
-            </span>
+            <div class="app-content">
 
 
-            <h3>
+              <div class="app-meta">
 
-              Agenda de Serviços e Clientes
+                <img
+                  src="assets/agenda-recorrente.png"
+                  alt="Ícone do aplicativo Agenda de Serviços e Clientes"
+                  class="app-icon"
+                  loading="lazy">
 
-            </h3>
+                <span class="app-category">
+
+                  Produtividade
+
+                </span>
+
+              </div>
 
 
-            <p>
+              <h3>
 
-              Organize seus clientes,
-              agendamentos e serviços
-              de forma prática e tenha
-              mais controle da sua
-              rotina profissional.
+                Agenda de Serviços e Clientes
 
-            </p>
+              </h3>
 
 
-            <a
-              href="https://play.google.com/store/apps/details?id=com.edvilson.agendarecorrente"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="play-button"
-              onclick="trackPlayStoreClick('agenda')">
+              <p class="app-benefit">
 
-              Ver na Google Play
+                Organize seus clientes e serviços
+                sem complicação.
 
-              <span>
-                →
-              </span>
+              </p>
 
-            </a>
+
+              <p class="app-description">
+
+                Tenha seus agendamentos,
+                clientes e informações importantes
+                sempre organizados para facilitar
+                sua rotina profissional.
+
+              </p>
+
+
+              <a
+                href="https://play.google.com/store/apps/details?id=com.edvilson.agendarecorrente"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="play-button"
+                onclick="trackPlayStoreClick('agenda')">
+
+                Ver na Google Play
+
+                <span>
+                  →
+                </span>
+
+              </a>
+
+
+            </div>
 
 
           </article>
 
 
 
-          <!-- CNH -->
+          <!-- =========================
+               CNH
+          ========================== -->
 
           <article class="app-card">
 
 
-            <img
-              src="assets/cnh.png"
-              alt="Ícone do aplicativo CNH Teórico e Prático"
-              class="app-icon"
-              loading="lazy">
+            <div class="app-promo-wrapper">
+
+              <img
+                src="assets/print-cnh.png"
+                alt="Conheça o aplicativo CNH Teórico e Prático"
+                class="app-promo"
+                loading="lazy">
+
+            </div>
 
 
-            <span class="app-category">
-
-              Educação
-
-            </span>
+            <div class="app-content">
 
 
-            <h3>
+              <div class="app-meta">
 
-              CNH - Teórico e Prático
+                <img
+                  src="assets/cnh.png"
+                  alt="Ícone do aplicativo CNH Teórico e Prático"
+                  class="app-icon"
+                  loading="lazy">
 
-            </h3>
+                <span class="app-category">
+
+                  Educação
+
+                </span>
+
+              </div>
 
 
-            <p>
+              <h3>
 
-              Estude para os exames
-              do Detran, pratique com
-              simulados e revise conteúdos
-              importantes para conquistar
-              sua CNH.
+                CNH - Teórico e Prático
 
-            </p>
+              </h3>
 
 
-            <a
-              href="https://play.google.com/store/apps/details?id=com.lima.pratica"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="play-button"
-              onclick="trackPlayStoreClick('cnh')">
+              <p class="app-benefit">
 
-              Ver na Google Play
+                Prepare-se para conquistar
+                sua CNH.
 
-              <span>
-                →
-              </span>
+              </p>
 
-            </a>
+
+              <p class="app-description">
+
+                Estude conteúdos importantes,
+                pratique com simulados e prepare-se
+                para os exames do Detran.
+
+              </p>
+
+
+              <a
+                href="https://play.google.com/store/apps/details?id=com.lima.pratica"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="play-button"
+                onclick="trackPlayStoreClick('cnh')">
+
+                Ver na Google Play
+
+                <span>
+                  →
+                </span>
+
+              </a>
+
+
+            </div>
 
 
           </article>
 
 
 
-          <!-- PDF STUDIO -->
+          <!-- =========================
+               PDF STUDIO
+          ========================== -->
 
           <article class="app-card">
 
 
-            <img
-              src="assets/meu-pdf.png"
-              alt="Ícone do aplicativo PDF Studio"
-              class="app-icon"
-              loading="lazy">
+            <div class="app-promo-wrapper">
+
+              <img
+                src="assets/print-pdf-studio.png"
+                alt="Conheça o aplicativo PDF Studio"
+                class="app-promo"
+                loading="lazy">
+
+            </div>
 
 
-            <span class="app-category">
-
-              Ferramentas
-
-            </span>
+            <div class="app-content">
 
 
-            <h3>
+              <div class="app-meta">
 
-              PDF Studio: Ler e Editar PDF
+                <img
+                  src="assets/meu-pdf.png"
+                  alt="Ícone do aplicativo PDF Studio"
+                  class="app-icon"
+                  loading="lazy">
 
-            </h3>
+                <span class="app-category">
+
+                  Ferramentas
+
+                </span>
+
+              </div>
 
 
-            <p>
+              <h3>
 
-              Leia, crie e gerencie
-              seus arquivos PDF
-              de maneira simples
-              e tenha suas ferramentas
-              essenciais sempre à mão.
+                PDF Studio: Ler e Editar PDF
 
-            </p>
+              </h3>
 
 
-            <a
-              href="https://play.google.com/store/apps/details?id=br.com.limaapps.meupdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="play-button"
-              onclick="trackPlayStoreClick('pdf_studio')">
+              <p class="app-benefit">
 
-              Ver na Google Play
+                Seus PDFs sempre à mão.
 
-              <span>
-                →
-              </span>
+              </p>
 
-            </a>
+
+              <p class="app-description">
+
+                Leia, crie e gerencie seus
+                documentos PDF diretamente
+                pelo celular de forma simples
+                e prática.
+
+              </p>
+
+
+              <a
+                href="https://play.google.com/store/apps/details?id=br.com.limaapps.meupdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="play-button"
+                onclick="trackPlayStoreClick('pdf_studio')">
+
+                Ver na Google Play
+
+                <span>
+                  →
+                </span>
+
+              </a>
+
+
+            </div>
 
 
           </article>
 
 
 
-          <!-- BABYSLEEP -->
+          <!-- =========================
+               BABYSLEEP
+          ========================== -->
 
           <article class="app-card">
 
 
-            <img
-              src="assets/white-noise.png"
-              alt="Ícone do aplicativo BabySleep Ruído Branco"
-              class="app-icon"
-              loading="lazy">
+            <div class="app-promo-wrapper">
+
+              <img
+                src="assets/print-babysleep.png"
+                alt="Conheça o aplicativo BabySleep Ruído Branco"
+                class="app-promo"
+                loading="lazy">
+
+            </div>
 
 
-            <span class="app-category">
-
-              Sono e relaxamento
-
-            </span>
+            <div class="app-content">
 
 
-            <h3>
+              <div class="app-meta">
 
-              BabySleep: Ruído Branco
+                <img
+                  src="assets/white-noise.png"
+                  alt="Ícone do aplicativo BabySleep Ruído Branco"
+                  class="app-icon"
+                  loading="lazy">
 
-            </h3>
+                <span class="app-category">
+
+                  Sono e relaxamento
+
+                </span>
+
+              </div>
 
 
-            <p>
+              <h3>
 
-              Ruído branco e sons
-              relaxantes para criar
-              um ambiente tranquilo
-              e ajudar seu bebê
-              a dormir melhor.
+                BabySleep: Ruído Branco
 
-            </p>
+              </h3>
 
 
-            <a
-              href="https://play.google.com/store/apps/details?id=com.lima.alice"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="play-button"
-              onclick="trackPlayStoreClick('babysleep')">
+              <p class="app-benefit">
 
-              Ver na Google Play
+                Ajude seu bebê a dormir melhor.
 
-              <span>
-                →
-              </span>
+              </p>
 
-            </a>
+
+              <p class="app-description">
+
+                Crie um ambiente tranquilo
+                com ruído branco e sons
+                relaxantes para ajudar nos
+                momentos de sono.
+
+              </p>
+
+
+              <a
+                href="https://play.google.com/store/apps/details?id=com.lima.alice"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="play-button"
+                onclick="trackPlayStoreClick('babysleep')">
+
+                Ver na Google Play
+
+                <span>
+                  →
+                </span>
+
+              </a>
+
+
+            </div>
 
 
           </article>
 
 
 
-          <!-- KNOWLY -->
+          <!-- =========================
+               KNOWLY
+          ========================== -->
 
           <article class="app-card">
 
 
-            <img
-              src="assets/knowly.png"
-              alt="Ícone do aplicativo Knowly Flashcards de Estudo"
-              class="app-icon"
-              loading="lazy">
+            <div class="app-promo-wrapper">
+
+              <img
+                src="assets/print-knowly.png"
+                alt="Conheça o aplicativo Knowly Flashcards de Estudo"
+                class="app-promo"
+                loading="lazy">
+
+            </div>
 
 
-            <span class="app-category">
-
-              Educação
-
-            </span>
+            <div class="app-content">
 
 
-            <h3>
+              <div class="app-meta">
 
-              Knowly: Flashcards de Estudo
+                <img
+                  src="assets/knowly.png"
+                  alt="Ícone do aplicativo Knowly Flashcards de Estudo"
+                  class="app-icon"
+                  loading="lazy">
 
-            </h3>
+                <span class="app-category">
+
+                  Educação
+
+                </span>
+
+              </div>
 
 
-            <p>
+              <h3>
 
-              Crie flashcards personalizados,
-              organize seus estudos por temas
-              e revise seus conteúdos
-              onde quiser.
+                Knowly: Flashcards de Estudo
 
-            </p>
+              </h3>
 
 
-            <a
-              href="https://play.google.com/store/apps/details?id=br.com.limaapps.cards"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="play-button"
-              onclick="trackPlayStoreClick('knowly')">
+              <p class="app-benefit">
 
-              Ver na Google Play
+                Estude melhor com flashcards
+                criados por você.
 
-              <span>
-                →
-              </span>
+              </p>
 
-            </a>
+
+              <p class="app-description">
+
+                Crie seus próprios flashcards,
+                organize seus conteúdos por temas
+                e revise seus estudos onde quiser.
+
+              </p>
+
+
+              <a
+                href="https://play.google.com/store/apps/details?id=br.com.limaapps.cards"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="play-button"
+                onclick="trackPlayStoreClick('knowly')">
+
+                Ver na Google Play
+
+                <span>
+                  →
+                </span>
+
+              </a>
+
+
+            </div>
 
 
           </article>
 
 
 
-          <!-- BLOCOS ESCAPE -->
+          <!-- =========================
+               BLOCOS ESCAPE
+          ========================== -->
 
           <article class="app-card">
 
 
-            <img
-              src="assets/blocos-escape.png"
-              alt="Ícone do jogo Blocos Escape Puzzle Lógico"
-              class="app-icon"
-              loading="lazy">
+            <div class="app-promo-wrapper">
+
+              <img
+                src="assets/print-blocos-escape.png"
+                alt="Conheça o jogo Blocos Escape Puzzle Lógico"
+                class="app-promo"
+                loading="lazy">
+
+            </div>
 
 
-            <span class="app-category">
-
-              Jogos
-
-            </span>
+            <div class="app-content">
 
 
-            <h3>
+              <div class="app-meta">
 
-              Blocos Escape: Puzzle Lógico
+                <img
+                  src="assets/blocos-escape.png"
+                  alt="Ícone do jogo Blocos Escape Puzzle Lógico"
+                  class="app-icon"
+                  loading="lazy">
 
-            </h3>
+                <span class="app-category">
+
+                  Jogos
+
+                </span>
+
+              </div>
 
 
-            <p>
+              <h3>
 
-              Desafie sua lógica
-              e observação movendo
-              os blocos na direção
-              correta para completar
-              cada desafio.
+                Blocos Escape: Puzzle Lógico
 
-            </p>
+              </h3>
 
 
-            <a
-              href="https://play.google.com/store/apps/details?id=lima.ratos"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="play-button"
-              onclick="trackPlayStoreClick('blocos_escape')">
+              <p class="app-benefit">
 
-              Ver na Google Play
+                Desafie sua lógica
+                em cada movimento.
 
-              <span>
-                →
-              </span>
+              </p>
 
-            </a>
+
+              <p class="app-description">
+
+                Observe, pense e encontre
+                a sequência certa para liberar
+                os blocos e completar cada
+                novo desafio.
+
+              </p>
+
+
+              <a
+                href="https://play.google.com/store/apps/details?id=lima.ratos"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="play-button"
+                onclick="trackPlayStoreClick('blocos_escape')">
+
+                Ver na Google Play
+
+                <span>
+                  →
+                </span>
+
+              </a>
+
+
+            </div>
 
 
           </article>
-
 
 
         </div>
@@ -1940,7 +2236,6 @@
 
 
         <div class="benefits-grid">
-
 
 
           <div class="benefit">
@@ -2033,7 +2328,6 @@
 
 
           </div>
-
 
 
         </div>
