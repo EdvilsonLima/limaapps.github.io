@@ -1478,7 +1478,8 @@
               href="https://play.google.com/store/apps/dev?id=6756417330543430153"
               target="_blank"
               rel="noopener noreferrer"
-              class="btn btn-secondary">
+              class="btn btn-secondary"
+              onclick="trackPlayStoreClick('pagina_desenvolvedor')">
 
               Ver na Google Play
 
@@ -1586,7 +1587,8 @@
               href="https://play.google.com/store/apps/details?id=com.edvilson.agendarecorrente"
               target="_blank"
               rel="noopener noreferrer"
-              class="play-button">
+              class="play-button"
+              onclick="trackPlayStoreClick('agenda')">
 
               Ver na Google Play
 
@@ -1642,7 +1644,8 @@
               href="https://play.google.com/store/apps/details?id=com.lima.pratica"
               target="_blank"
               rel="noopener noreferrer"
-              class="play-button">
+              class="play-button"
+              onclick="trackPlayStoreClick('cnh')">
 
               Ver na Google Play
 
@@ -1698,7 +1701,8 @@
               href="https://play.google.com/store/apps/details?id=br.com.limaapps.meupdf"
               target="_blank"
               rel="noopener noreferrer"
-              class="play-button">
+              class="play-button"
+              onclick="trackPlayStoreClick('pdf_studio')">
 
               Ver na Google Play
 
@@ -1754,7 +1758,8 @@
               href="https://play.google.com/store/apps/details?id=com.lima.alice"
               target="_blank"
               rel="noopener noreferrer"
-              class="play-button">
+              class="play-button"
+              onclick="trackPlayStoreClick('babysleep')">
 
               Ver na Google Play
 
@@ -1809,7 +1814,8 @@
               href="https://play.google.com/store/apps/details?id=br.com.limaapps.cards"
               target="_blank"
               rel="noopener noreferrer"
-              class="play-button">
+              class="play-button"
+              onclick="trackPlayStoreClick('knowly')">
 
               Ver na Google Play
 
@@ -1865,7 +1871,8 @@
               href="https://play.google.com/store/apps/details?id=lima.ratos"
               target="_blank"
               rel="noopener noreferrer"
-              class="play-button">
+              class="play-button"
+              onclick="trackPlayStoreClick('blocos_escape')">
 
               Ver na Google Play
 
@@ -2249,6 +2256,33 @@
 
 
   </footer>
+
+
+
+  <!-- =========================
+       GOOGLE ANALYTICS
+       CLIQUES NA GOOGLE PLAY
+  ========================== -->
+
+  <script>
+
+    function trackPlayStoreClick(appName) {
+
+      if (typeof gtag === 'function') {
+
+        gtag(
+          'event',
+          'click_play_store',
+          {
+            app_name: appName
+          }
+        );
+
+      }
+
+    }
+
+  </script>
 
 
 </body>
