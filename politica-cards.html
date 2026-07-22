@@ -2,198 +2,1767 @@
 <html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Política de Privacidade - Cards</title>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+  <title>
+    Política de Privacidade | Knowly: Flashcards de Estudo
+  </title>
+
+  <meta
+    name="description"
+    content="Política de Privacidade do aplicativo Knowly: Flashcards de Estudo, desenvolvido pela Lima Apps.">
+
+  <meta
+    name="author"
+    content="Lima Apps">
+
+  <meta
+    name="robots"
+    content="index, follow">
+
+  <meta
+    name="theme-color"
+    content="#020617">
+
+  <link
+    rel="canonical"
+    href="https://www.limaapps.com.br/politica-cards.html">
+
+
+  <!-- =========================
+       FAVICON
+  ========================== -->
+
+  <link
+    rel="icon"
+    type="image/png"
+    href="assets/lima-apps-icon.png">
+
+  <link
+    rel="apple-touch-icon"
+    href="assets/lima-apps-icon.png">
+
 
   <style>
 
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family:Arial, Helvetica, sans-serif;
+    /* =========================
+       CONFIGURAÇÕES GERAIS
+    ========================== */
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    body{
-      background:#0f172a;
-      color:#cbd5e1;
-      padding:40px 8%;
-      line-height:1.8;
+
+    html {
+      scroll-behavior: smooth;
     }
 
-    .container{
-      max-width:950px;
-      margin:auto;
-      background:#1e293b;
-      padding:40px;
-      border-radius:24px;
-      box-shadow:0 10px 30px rgba(0,0,0,0.25);
+
+    body {
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+      background:
+        #020617;
+
+      color:
+        #f8fafc;
+
+      line-height:
+        1.7;
+
+      -webkit-font-smoothing:
+        antialiased;
+
     }
 
-    h1{
-      color:#38bdf8;
-      margin-bottom:10px;
-      font-size:42px;
+
+    a {
+      text-decoration: none;
+      color: inherit;
     }
 
-    .subtitle{
-      color:#94a3b8;
-      margin-bottom:40px;
+
+    img {
+      display: block;
+      max-width: 100%;
     }
 
-    h2{
-      color:#38bdf8;
-      margin-top:35px;
-      margin-bottom:14px;
-      font-size:26px;
+
+    .container {
+
+      width:
+        min(
+          920px,
+          92%
+        );
+
+      margin:
+        0 auto;
+
     }
 
-    p{
-      margin-bottom:16px;
+
+    /* =========================
+       HEADER
+    ========================== */
+
+    header {
+
+      position:
+        sticky;
+
+      top:
+        0;
+
+      z-index:
+        1000;
+
+      background:
+        rgba(
+          2,
+          6,
+          23,
+          0.95
+        );
+
+      backdrop-filter:
+        blur(12px);
+
+      border-bottom:
+        1px solid
+        rgba(
+          148,
+          163,
+          184,
+          0.12
+        );
+
     }
 
-    ul{
-      margin-left:24px;
-      margin-bottom:22px;
+
+    .navbar {
+
+      width:
+        min(
+          1180px,
+          92%
+        );
+
+      min-height:
+        72px;
+
+      margin:
+        0 auto;
+
+      display:
+        flex;
+
+      align-items:
+        center;
+
+      justify-content:
+        space-between;
+
+      gap:
+        30px;
+
     }
 
-    li{
-      margin-bottom:8px;
+
+    /* =========================
+       LOGO
+    ========================== */
+
+    .logo {
+
+      display:
+        flex;
+
+      align-items:
+        center;
+
+      gap:
+        11px;
+
+      color:
+        #f8fafc;
+
+      font-size:
+        1.4rem;
+
+      font-weight:
+        700;
+
     }
 
-    a{
-      color:#38bdf8;
-      text-decoration:none;
+
+    .logo img {
+
+      width:
+        42px;
+
+      height:
+        42px;
+
+      object-fit:
+        contain;
+
+      border-radius:
+        10px;
+
     }
 
-    .btn{
-      display:inline-block;
-      margin-top:40px;
-      background:#38bdf8;
-      color:#020617;
-      padding:14px 22px;
-      border-radius:12px;
-      text-decoration:none;
-      font-weight:bold;
+
+    .logo span {
+      color: #38bdf8;
+    }
+
+
+    /* =========================
+       NAVEGAÇÃO
+    ========================== */
+
+    nav {
+
+      display:
+        flex;
+
+      align-items:
+        center;
+
+      gap:
+        25px;
+
+    }
+
+
+    nav a {
+
+      color:
+        #cbd5e1;
+
+      font-size:
+        0.92rem;
+
+      transition:
+        color
+        0.2s ease;
+
+    }
+
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+
+    /* =========================
+       HERO
+    ========================== */
+
+    .hero {
+
+      position:
+        relative;
+
+      overflow:
+        hidden;
+
+      padding:
+        85px
+        0
+        60px;
+
+      text-align:
+        center;
+
+    }
+
+
+    .hero::before {
+
+      content:
+        "";
+
+      position:
+        absolute;
+
+      width:
+        500px;
+
+      height:
+        500px;
+
+      top:
+        -330px;
+
+      left:
+        50%;
+
+      transform:
+        translateX(-50%);
+
+      background:
+        rgba(
+          56,
+          189,
+          248,
+          0.14
+        );
+
+      filter:
+        blur(100px);
+
+      border-radius:
+        50%;
+
+      pointer-events:
+        none;
+
+    }
+
+
+    .hero-content {
+
+      position:
+        relative;
+
+      z-index:
+        1;
+
+    }
+
+
+    .app-icon {
+
+      width:
+        86px;
+
+      height:
+        86px;
+
+      margin:
+        0 auto
+        24px;
+
+      border-radius:
+        20px;
+
+      object-fit:
+        cover;
+
+      box-shadow:
+        0
+        18px
+        40px
+        rgba(
+          0,
+          0,
+          0,
+          0.35
+        );
+
+    }
+
+
+    .hero-label {
+
+      display:
+        inline-block;
+
+      margin-bottom:
+        15px;
+
+      color:
+        #38bdf8;
+
+      font-size:
+        0.82rem;
+
+      font-weight:
+        700;
+
+      text-transform:
+        uppercase;
+
+      letter-spacing:
+        1.5px;
+
+    }
+
+
+    .hero h1 {
+
+      font-size:
+        clamp(
+          2rem,
+          5vw,
+          3.4rem
+        );
+
+      line-height:
+        1.15;
+
+      color:
+        #f8fafc;
+
+    }
+
+
+    .hero p {
+
+      max-width:
+        680px;
+
+      margin:
+        20px
+        auto
+        0;
+
+      color:
+        #94a3b8;
+
+      font-size:
+        1.05rem;
+
+    }
+
+
+    /* =========================
+       POLÍTICA
+    ========================== */
+
+    .privacy-content {
+
+      padding-bottom:
+        90px;
+
+    }
+
+
+    .privacy-card {
+
+      padding:
+        42px;
+
+      background:
+        #0f172a;
+
+      border:
+        1px solid
+        #1e293b;
+
+      border-radius:
+        20px;
+
+      box-shadow:
+        0
+        20px
+        50px
+        rgba(
+          0,
+          0,
+          0,
+          0.2
+        );
+
+    }
+
+
+    .updated {
+
+      margin-bottom:
+        32px;
+
+      padding-bottom:
+        22px;
+
+      border-bottom:
+        1px solid
+        #1e293b;
+
+      color:
+        #64748b;
+
+      font-size:
+        0.88rem;
+
+    }
+
+
+    .privacy-card section {
+
+      padding:
+        0;
+
+      margin-bottom:
+        34px;
+
+    }
+
+
+    .privacy-card section:last-child {
+
+      margin-bottom:
+        0;
+
+    }
+
+
+    .privacy-card h2 {
+
+      margin-bottom:
+        12px;
+
+      color:
+        #f8fafc;
+
+      font-size:
+        1.35rem;
+
+    }
+
+
+    .privacy-card p {
+
+      margin-bottom:
+        13px;
+
+      color:
+        #cbd5e1;
+
+    }
+
+
+    .privacy-card p:last-child {
+
+      margin-bottom:
+        0;
+
+    }
+
+
+    .privacy-card ul {
+
+      margin:
+        14px
+        0
+        0
+        22px;
+
+      color:
+        #cbd5e1;
+
+    }
+
+
+    .privacy-card li {
+
+      margin-bottom:
+        9px;
+
+    }
+
+
+    .highlight {
+
+      padding:
+        20px;
+
+      margin:
+        18px
+        0;
+
+      background:
+        rgba(
+          56,
+          189,
+          248,
+          0.07
+        );
+
+      border:
+        1px solid
+        rgba(
+          56,
+          189,
+          248,
+          0.2
+        );
+
+      border-radius:
+        12px;
+
+      color:
+        #cbd5e1;
+
+    }
+
+
+    .privacy-card a {
+
+      color:
+        #38bdf8;
+
+      font-weight:
+        600;
+
+      word-break:
+        break-word;
+
+    }
+
+
+    .privacy-card a:hover {
+      color: #7dd3fc;
+    }
+
+
+    /* =========================
+       BOTÃO
+    ========================== */
+
+    .back-wrapper {
+
+      margin-top:
+        35px;
+
+      text-align:
+        center;
+
+    }
+
+
+    .back-button {
+
+      min-height:
+        48px;
+
+      display:
+        inline-flex;
+
+      align-items:
+        center;
+
+      justify-content:
+        center;
+
+      padding:
+        0
+        24px;
+
+      border-radius:
+        10px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #38bdf8,
+          #2563eb
+        );
+
+      color:
+        #ffffff;
+
+      font-size:
+        0.92rem;
+
+      font-weight:
+        700;
+
+      transition:
+        transform
+        0.2s ease,
+        box-shadow
+        0.2s ease;
+
+    }
+
+
+    .back-button:hover {
+
+      transform:
+        translateY(-2px);
+
+      box-shadow:
+        0
+        10px
+        25px
+        rgba(
+          37,
+          99,
+          235,
+          0.3
+        );
+
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================== */
+
+    footer {
+
+      padding:
+        35px
+        0;
+
+      border-top:
+        1px solid
+        #1e293b;
+
+      text-align:
+        center;
+
+      color:
+        #64748b;
+
+      font-size:
+        0.85rem;
+
+    }
+
+
+    /* =========================
+       RESPONSIVO
+    ========================== */
+
+    @media (
+      max-width:
+      680px
+    ) {
+
+
+      .navbar {
+        min-height: 64px;
+      }
+
+
+      .logo {
+        font-size: 1.2rem;
+      }
+
+
+      .logo img {
+
+        width:
+          38px;
+
+        height:
+          38px;
+
+      }
+
+
+      nav a:not(:last-child) {
+        display: none;
+      }
+
+
+      .hero {
+
+        padding:
+          65px
+          0
+          45px;
+
+      }
+
+
+      .app-icon {
+
+        width:
+          72px;
+
+        height:
+          72px;
+
+      }
+
+
+      .privacy-card {
+
+        padding:
+          28px
+          22px;
+
+      }
+
+
+      .privacy-card h2 {
+
+        font-size:
+          1.2rem;
+
+      }
+
     }
 
   </style>
 
 </head>
 
+
 <body>
 
-<div class="container">
 
-  <h1>Política de Privacidade</h1>
+  <!-- =========================
+       HEADER
+  ========================== -->
 
-  <p class="subtitle">
-    Aplicativo Cards
-    <br>
-    Última atualização: 07/06/2026
-  </p>
+  <header>
 
-  <p>
-    Esta Política de Privacidade descreve como o aplicativo
-    Cards trata as informações dos usuários.
-  </p>
 
-  <p>
-    Ao utilizar o aplicativo, você concorda com os termos descritos nesta política.
-  </p>
+    <div class="navbar">
 
-  <h2>1. Coleta de informações</h2>
 
-  <p>
-    O aplicativo não exige criação de conta, login ou cadastro de usuário.
-  </p>
+      <a
+        href="index.html"
+        class="logo">
 
-  <p>
-    O desenvolvedor não coleta, armazena ou compartilha dados pessoais diretamente.
-  </p>
+        <img
+          src="assets/lima-apps-icon.png"
+          alt="Lima Apps">
 
-  <h2>2. Uso de anúncios</h2>
+        Lima
 
-  <p>
-    O aplicativo pode utilizar o Google AdMob para exibição de anúncios.
-  </p>
+        <span>
+          Apps
+        </span>
 
-  <p>
-    Serviços de terceiros podem coletar automaticamente determinadas informações para fornecer anúncios personalizados ou não personalizados.
-  </p>
+      </a>
 
-  <ul>
-    <li>Identificadores do dispositivo</li>
-    <li>Dados de uso do aplicativo</li>
-    <li>Endereço IP</li>
-    <li>Informações aproximadas de localização</li>
-  </ul>
 
-  <p>
-    Para mais informações:
-  </p>
+      <nav>
 
-  <p>
-    <a href="https://policies.google.com/privacy" target="_blank">
-      https://policies.google.com/privacy
-    </a>
-  </p>
 
-  <h2>3. Uso do aplicativo</h2>
+        <a href="index.html#apps">
+          Aplicativos
+        </a>
 
-  <p>
-    O aplicativo possui funcionalidades voltadas à organização e utilização de cartões digitais e recursos relacionados.
-  </p>
 
-  <p>
-    Nenhuma informação pessoal é enviada para servidores próprios do desenvolvedor.
-  </p>
+        <a href="politicas.html">
+          Políticas
+        </a>
 
-  <h2>4. Compartilhamento de dados</h2>
 
-  <p>
-    O desenvolvedor não vende, transfere ou compartilha dados pessoais diretamente.
-  </p>
+        <a href="index.html#sobre">
+          Sobre
+        </a>
 
-  <p>
-    Serviços de terceiros podem processar informações conforme suas próprias políticas de privacidade.
-  </p>
 
-  <h2>5. Segurança</h2>
+        <a href="mailto:limaapps@hotmail.com">
+          Contato
+        </a>
 
-  <p>
-    O aplicativo foi desenvolvido utilizando boas práticas de segurança e privacidade.
-  </p>
 
-  <h2>6. Crianças</h2>
+      </nav>
 
-  <p>
-    O aplicativo não é direcionado especificamente para crianças.
-  </p>
 
-  <h2>7. Alterações nesta política</h2>
+    </div>
 
-  <p>
-    Esta Política de Privacidade pode ser atualizada periodicamente.
-  </p>
 
-  <h2>8. Contato</h2>
+  </header>
 
-  <p>
-    Em caso de dúvidas:
-  </p>
 
-  <p>
-    limaapps@hotmail.com
-  </p>
+  <main>
 
-  <a class="btn" href="https://limaapps.com.br">
-    Voltar para o site
-  </a>
 
-</div>
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section class="hero">
+
+
+      <div class="container hero-content">
+
+
+        <img
+          src="assets/knowly.png"
+          alt="Ícone do Knowly: Flashcards de Estudo"
+          class="app-icon">
+
+
+        <span class="hero-label">
+
+          Política de Privacidade
+
+        </span>
+
+
+        <h1>
+
+          Knowly: Flashcards de Estudo
+
+        </h1>
+
+
+        <p>
+
+          Esta Política de Privacidade explica
+          como o aplicativo Knowly trata
+          informações, utiliza serviços de
+          publicidade e protege a privacidade
+          de seus usuários.
+
+        </p>
+
+
+      </div>
+
+
+    </section>
+
+
+    <!-- =========================
+         CONTEÚDO
+    ========================== -->
+
+    <div class="privacy-content">
+
+
+      <div class="container">
+
+
+        <article class="privacy-card">
+
+
+          <div class="updated">
+
+            Última atualização:
+            21 de julho de 2026
+
+          </div>
+
+
+          <!-- =========================
+               1
+          ========================== -->
+
+          <section>
+
+
+            <h2>
+              1. Sobre esta Política
+            </h2>
+
+
+            <p>
+
+              Esta Política de Privacidade
+              aplica-se ao aplicativo
+              <strong>
+                Knowly: Flashcards de Estudo
+              </strong>,
+              desenvolvido e disponibilizado
+              pela Lima Apps.
+
+            </p>
+
+
+            <p>
+
+              O objetivo desta política é
+              informar de maneira clara
+              como informações podem ser
+              tratadas durante a utilização
+              do aplicativo, inclusive por
+              serviços de terceiros utilizados
+              para a exibição de anúncios.
+
+            </p>
+
+
+          </section>
+
+
+          <!-- =========================
+               2
+          ========================== -->
+
+          <section>
+
+
+            <h2>
+              2. Cadastro e informações fornecidas pelo usuário
+            </h2>
+
+
+            <div class="highlight">
+
+              O Knowly não exige criação
+              de conta ou cadastro para
+              utilizar suas principais
+              funcionalidades.
+
+            </div>
+
+
+            <p>
+
+              A Lima Apps não solicita
+              diretamente informações como
+              nome, endereço, número de telefone
+              ou e-mail para que o usuário
+              possa criar e revisar seus
+              flashcards.
+
+            </p>
+
+
+          </section>
+
+
+          <!-- =========================
+               3
+          ========================== -->
+
+          <section>
+
+
+            <h2>
+              3. Flashcards e conteúdos criados pelo usuário
+            </h2>
+
+
+            <p>
+
+              Os flashcards, temas e demais
+              conteúdos de estudo criados
+              pelo usuário são utilizados
+              para disponibilizar as
+              funcionalidades do aplicativo.
+
+            </p>
+
+
+            <p>
+
+              Esses conteúdos são armazenados
+              localmente no dispositivo
+              do usuário.
+
+            </p>
+
+
+            <p>
+
+              A Lima Apps não envia para
+              seus próprios servidores,
+              não comercializa e não utiliza
+              o conteúdo dos flashcards
+              para fins publicitários.
+
+            </p>
+
+
+          </section>
+
+
+          <!-- =========================
+               4
+          ========================== -->
+
+          <section>
+
+
+            <h2>
+              4. Funcionamento offline
+            </h2>
+
+
+            <p>
+
+              As principais funcionalidades
+              de criação, organização e revisão
+              de flashcards podem ser utilizadas
+              localmente no dispositivo.
+
+            </p>
+
+
+            <p>
+
+              Entretanto, recursos que dependem
+              de serviços externos, como
+              o carregamento de anúncios,
+              podem necessitar de conexão
+              com a internet.
+
+            </p>
+
+
+          </section>
+
+
+          <!-- =========================
+               5
+          ========================== -->
+
+          <section>
+
+
+            <h2>
+              5. Publicidade e Google AdMob
+            </h2>
+
+
+            <p>
+
+              O Knowly utiliza o
+              <strong>
+                Google AdMob
+              </strong>
+              para exibir anúncios dentro
+              do aplicativo, incluindo
+              anúncios em formato de banner.
+
+            </p>
+
+
+            <p>
+
+              O Google AdMob é um serviço
+              fornecido pela Google e utiliza
+              o Google Mobile Ads SDK.
+
+            </p>
+
+
+            <p>
+
+              Durante a utilização do aplicativo,
+              o serviço de publicidade pode
+              processar automaticamente
+              determinados dados técnicos
+              necessários para exibir anúncios,
+              realizar medições, gerar relatórios
+              e prevenir atividades fraudulentas.
+
+            </p>
+
+
+            <p>
+              Esses dados podem incluir:
+            </p>
+
+
+            <ul>
+
+              <li>
+                endereço IP do dispositivo;
+              </li>
+
+              <li>
+                informações aproximadas
+                de localização derivadas
+                do endereço IP;
+              </li>
+
+              <li>
+                interações com o aplicativo
+                e com anúncios;
+              </li>
+
+              <li>
+                informações de diagnóstico
+                e desempenho;
+              </li>
+
+              <li>
+                identificadores de dispositivo,
+                como o identificador de
+                publicidade do Android,
+                quando disponível;
+              </li>
+
+              <li>
+                identificadores relacionados
+                ao aplicativo ou ao dispositivo.
+              </li>
+
+            </ul>
+
+
+            <p>
+
+              Essas informações são processadas
+              de acordo com as políticas
+              e tecnologias de publicidade
+              da Google.
+
+            </p>
+
+
+            <p>
+
+              Política de Privacidade da Google:
+
+              <a
+                href="https://policies.google.com/privacy"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                https://policies.google.com/privacy
+
+              </a>
+
+            </p>
+
+
+            <p>
+
+              Informações sobre como a Google
+              utiliza dados de sites e
+              aplicativos parceiros:
+
+              <a
+                href="https://policies.google.com/technologies/partner-sites"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                https://policies.google.com/technologies/partner-sites
+
+              </a>
+
+            </p>
+
+
+          </section>
+
+
+          <!-- =========================
+               6
+          ========================== -->
+
+          <section>
+
+
+            <h2>
+              6. Personalização de anúncios
+            </h2>
+
+
+            <p>
+
+              Dependendo da região,
+              das configurações do dispositivo,
+              das opções de privacidade
+              disponíveis e dos consentimentos
+              aplicáveis, os anúncios exibidos
+              pelo Google AdMob podem ser
+              personalizados ou não personalizados.
+
+            </p>
+
+
+            <p>
+
+              O usuário pode gerenciar
+              determinadas preferências
+              relacionadas à publicidade
+              por meio das configurações
+              da sua Conta Google e das
+              configurações de privacidade
+              e publicidade do dispositivo Android.
+
+            </p>
+
+
+          </section>
+
+
+          <!-- =========================
+               7
+          ========================== -->
+
+          <section>
+
+
+            <h2>
+              7. Compartilhamento com terceiros
+            </h2>
+
+
+            <p>
+
+              A Lima Apps não vende
+              informações pessoais dos
+              usuários do Knowly.
+
+            </p>
+
+
+            <p>
+
+              Entretanto, como o aplicativo
+              utiliza o Google AdMob,
+              determinados dados técnicos
+              podem ser transmitidos
+              e processados pela Google
+              para possibilitar a publicidade,
+              análise relacionada aos anúncios,
+              medição de desempenho e
+              prevenção de fraudes.
+
+            </p>
+
+
+            <p>
+
+              O tratamento desses dados
+              pelo Google está sujeito
+              às políticas e termos
+              aplicáveis aos serviços
+              da empresa.
+
+            </p>
+
+
+          </section>
+
+
+          <!-- =========================
+               8
+          ========================== -->
+
+          <section>
+
+
+            <h2>
+              8. Segurança das informações
+            </h2>
+
+
+            <p>
+
+              A Lima Apps procura desenvolver
+              seus aplicativos seguindo
+              boas práticas de segurança
+              e privacidade.
+
+            </p>
+
+
+            <p>
+
+              Os dados processados pelo
+              Google Mobile Ads SDK são
+              protegidos durante a transmissão
+              conforme os mecanismos
+              de segurança utilizados
+              pelo serviço.
+
+            </p>
+
+
+            <p>
+
+              Ainda assim, nenhum sistema,
+              dispositivo ou método
+              de transmissão e armazenamento
+              eletrônico pode garantir
+              segurança absoluta.
+
+            </p>
+
+
+          </section>
+
+
+          <!-- =========================
+               9
+          ========================== -->
+
+          <section>
+
+
+            <h2>
+              9. Armazenamento e exclusão dos flashcards
+            </h2>
+
+
+            <p>
+
+              Os flashcards e conteúdos
+              de estudo criados pelo usuário
+              são armazenados localmente
+              no dispositivo.
+
+            </p>
+
+
+            <p>
+
+              O usuário pode excluir
+              conteúdos diretamente
+              no aplicativo por meio
+              das funcionalidades disponíveis.
+
+            </p>
+
+
+            <p>
+
+              Os dados locais também
+              podem ser removidos pela
+              limpeza dos dados do aplicativo
+              nas configurações do Android
+              ou pela desinstalação
+              do aplicativo.
+
+            </p>
+
+
+            <p>
+
+              A desinstalação, limpeza
+              de dados ou determinadas
+              alterações no dispositivo
+              podem resultar na perda
+              definitiva das informações
+              armazenadas localmente.
+
+            </p>
+
+
+          </section>
+
+
+          <!-- =========================
+               10
+          ========================== -->
+
+          <section>
+
+
+            <h2>
+              10. Permissões do dispositivo
+            </h2>
+
+
+            <p>
+
+              Quando alguma funcionalidade
+              necessitar de uma permissão
+              específica do Android,
+              o aplicativo poderá solicitar
+              autorização ao usuário.
+
+            </p>
+
+
+            <p>
+
+              As permissões são utilizadas
+              apenas para possibilitar
+              as funcionalidades relacionadas
+              à solicitação e podem ser
+              gerenciadas pelo próprio
+              usuário nas configurações
+              do dispositivo.
+
+            </p>
+
+
+          </section>
+
+
+          <!-- =========================
+               11
+          ========================== -->
+
+          <section>
+
+
+            <h2>
+              11. Privacidade de crianças e adolescentes
+            </h2>
+
+
+            <p>
+
+              O Knowly é uma ferramenta
+              educacional classificada
+              para diferentes faixas etárias
+              e não exige cadastro para
+              utilizar suas principais
+              funcionalidades.
+
+            </p>
+
+
+            <p>
+
+              A Lima Apps não solicita
+              intencionalmente informações
+              pessoais diretamente de crianças
+              para utilização dos recursos
+              de criação e revisão
+              de flashcards.
+
+            </p>
+
+
+            <p>
+
+              A exibição de anúncios
+              e o tratamento de informações
+              relacionados ao Google AdMob
+              seguem as políticas aplicáveis
+              ao serviço de publicidade
+              utilizado pelo aplicativo.
+
+            </p>
+
+
+          </section>
+
+
+          <!-- =========================
+               12
+          ========================== -->
+
+          <section>
+
+
+            <h2>
+              12. Direitos de privacidade
+            </h2>
+
+
+            <p>
+
+              De acordo com a legislação
+              aplicável, incluindo a
+              Lei Geral de Proteção de Dados
+              Pessoais (LGPD), o usuário
+              poderá possuir direitos
+              relacionados ao tratamento
+              de seus dados pessoais.
+
+            </p>
+
+
+            <p>
+
+              Solicitações relacionadas
+              diretamente à Lima Apps
+              podem ser encaminhadas
+              pelo endereço de e-mail
+              informado nesta política.
+
+            </p>
+
+
+            <p>
+
+              Quando o tratamento for realizado
+              diretamente por serviços
+              de terceiros, como o Google AdMob,
+              o usuário também poderá utilizar
+              os mecanismos e configurações
+              de privacidade disponibilizados
+              pelo respectivo fornecedor.
+
+            </p>
+
+
+          </section>
+
+
+          <!-- =========================
+               13
+          ========================== -->
+
+          <section>
+
+
+            <h2>
+              13. Links e serviços externos
+            </h2>
+
+
+            <p>
+
+              O aplicativo ou os canais
+              relacionados à Lima Apps
+              podem conter links para
+              páginas ou serviços externos.
+
+            </p>
+
+
+            <p>
+
+              A Lima Apps não controla
+              as práticas de privacidade
+              adotadas por serviços externos,
+              sendo recomendada a leitura
+              das respectivas políticas
+              de privacidade.
+
+            </p>
+
+
+          </section>
+
+
+          <!-- =========================
+               14
+          ========================== -->
+
+          <section>
+
+
+            <h2>
+              14. Alterações nesta Política
+            </h2>
+
+
+            <p>
+
+              Esta Política de Privacidade
+              poderá ser atualizada sempre
+              que houver mudanças no
+              funcionamento do aplicativo,
+              inclusão ou remoção de serviços,
+              alterações nas práticas
+              de tratamento de dados
+              ou necessidade de adequação
+              legal.
+
+            </p>
+
+
+            <p>
+
+              A data da última atualização
+              será informada no início
+              desta página.
+
+            </p>
+
+
+          </section>
+
+
+          <!-- =========================
+               15
+          ========================== -->
+
+          <section>
+
+
+            <h2>
+              15. Contato
+            </h2>
+
+
+            <p>
+
+              Para dúvidas, solicitações
+              ou informações relacionadas
+              a esta Política de Privacidade,
+              entre em contato com
+              a Lima Apps.
+
+            </p>
+
+
+            <p>
+
+              E-mail:
+
+              <a
+                href="mailto:limaapps@hotmail.com">
+
+                limaapps@hotmail.com
+
+              </a>
+
+            </p>
+
+
+            <p>
+
+              Site:
+
+              <a
+                href="https://www.limaapps.com.br/">
+
+                www.limaapps.com.br
+
+              </a>
+
+            </p>
+
+
+          </section>
+
+
+        </article>
+
+
+        <!-- =========================
+             VOLTAR
+        ========================== -->
+
+        <div class="back-wrapper">
+
+
+          <a
+            href="politicas.html"
+            class="back-button">
+
+            ← Voltar para as políticas
+
+          </a>
+
+
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+
+  </main>
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer>
+
+
+    <div class="container">
+
+      © 2026 Lima Apps.
+      Todos os direitos reservados.
+
+    </div>
+
+
+  </footer>
+
 
 </body>
 
