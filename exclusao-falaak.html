@@ -15,7 +15,7 @@
 
   <meta
     name="description"
-    content="Solicite a exclusão da sua conta e dos dados associados ao aplicativo Falaak.">
+    content="Solicite a exclusão da sua conta do Falaak e dos dados associados.">
 
   <meta
     name="author"
@@ -34,7 +34,9 @@
     href="https://www.limaapps.com.br/exclusao-falaak.html">
 
 
-  <!-- FAVICON -->
+  <!-- =========================
+       FAVICON
+  ========================== -->
 
   <link
     rel="icon"
@@ -47,6 +49,10 @@
 
 
   <style>
+
+    /* =========================
+       CONFIGURAÇÕES GERAIS
+    ========================== */
 
     * {
       margin: 0;
@@ -79,6 +85,9 @@
       min-height:
         100vh;
 
+      -webkit-font-smoothing:
+        antialiased;
+
     }
 
 
@@ -98,7 +107,7 @@
 
       width:
         min(
-          860px,
+          920px,
           92%
         );
 
@@ -175,6 +184,10 @@
     }
 
 
+    /* =========================
+       LOGO
+    ========================== */
+
     .logo {
 
       display:
@@ -220,6 +233,10 @@
     }
 
 
+    /* =========================
+       NAVEGAÇÃO
+    ========================== */
+
     nav {
 
       display:
@@ -241,6 +258,10 @@
 
       font-size:
         0.92rem;
+
+      transition:
+        color
+        0.2s ease;
 
     }
 
@@ -265,7 +286,7 @@
       padding:
         85px
         0
-        55px;
+        60px;
 
       text-align:
         center;
@@ -275,7 +296,8 @@
 
     .hero::before {
 
-      content: "";
+      content:
+        "";
 
       position:
         absolute;
@@ -287,7 +309,7 @@
         500px;
 
       top:
-        -340px;
+        -330px;
 
       left:
         50%;
@@ -309,6 +331,9 @@
       border-radius:
         50%;
 
+      pointer-events:
+        none;
+
     }
 
 
@@ -326,17 +351,17 @@
     .app-icon {
 
       width:
-        88px;
+        86px;
 
       height:
-        88px;
+        86px;
 
       margin:
         0 auto
         24px;
 
       border-radius:
-        21px;
+        20px;
 
       object-fit:
         cover;
@@ -364,7 +389,7 @@
         inline-block;
 
       margin-bottom:
-        14px;
+        15px;
 
       color:
         #38bdf8;
@@ -386,6 +411,9 @@
 
     .hero h1 {
 
+      margin:
+        0;
+
       font-size:
         clamp(
           2rem,
@@ -396,13 +424,16 @@
       line-height:
         1.15;
 
+      color:
+        #f8fafc;
+
     }
 
 
     .hero p {
 
       max-width:
-        650px;
+        680px;
 
       margin:
         20px
@@ -422,7 +453,7 @@
        CONTEÚDO
     ========================== */
 
-    .content {
+    .delete-content {
 
       padding-bottom:
         90px;
@@ -430,7 +461,7 @@
     }
 
 
-    .card {
+    .delete-card {
 
       padding:
         42px;
@@ -453,21 +484,45 @@
           0,
           0,
           0,
-          0.22
+          0.2
         );
 
     }
 
 
-    .card section {
+    .updated {
 
       margin-bottom:
-        35px;
+        32px;
+
+      padding-bottom:
+        22px;
+
+      border-bottom:
+        1px solid
+        #1e293b;
+
+      color:
+        #64748b;
+
+      font-size:
+        0.88rem;
 
     }
 
 
-    .card section:last-child {
+    .delete-card section {
+
+      padding:
+        0;
+
+      margin-bottom:
+        34px;
+
+    }
+
+
+    .delete-card section:last-child {
 
       margin-bottom:
         0;
@@ -475,7 +530,7 @@
     }
 
 
-    .card h2 {
+    .delete-card h2 {
 
       margin-bottom:
         12px;
@@ -489,7 +544,7 @@
     }
 
 
-    .card p {
+    .delete-card p {
 
       margin-bottom:
         13px;
@@ -500,10 +555,18 @@
     }
 
 
-    .card ul {
+    .delete-card p:last-child {
+
+      margin-bottom:
+        0;
+
+    }
+
+
+    .delete-card ul {
 
       margin:
-        15px
+        14px
         0
         0
         22px;
@@ -514,7 +577,7 @@
     }
 
 
-    .card li {
+    .delete-card li {
 
       margin-bottom:
         9px;
@@ -524,12 +587,12 @@
 
     .highlight {
 
-      margin:
-        20px
-        0;
-
       padding:
         20px;
+
+      margin:
+        18px
+        0;
 
       background:
         rgba(
@@ -559,27 +622,27 @@
 
     .warning {
 
-      margin:
-        20px
-        0;
-
       padding:
         20px;
 
+      margin:
+        18px
+        0;
+
       background:
         rgba(
-          239,
-          68,
-          68,
-          0.07
+          245,
+          158,
+          11,
+          0.06
         );
 
       border:
         1px solid
         rgba(
-          239,
-          68,
-          68,
+          245,
+          158,
+          11,
           0.22
         );
 
@@ -592,20 +655,39 @@
     }
 
 
+    .delete-card a {
+
+      color:
+        #38bdf8;
+
+      font-weight:
+        600;
+
+      word-break:
+        break-word;
+
+    }
+
+
+    .delete-card a:hover {
+      color: #7dd3fc;
+    }
+
+
     /* =========================
-       BOTÃO
+       BOTÃO PRINCIPAL
     ========================== */
 
-    .delete-button {
+    .action-button {
 
       width:
         100%;
 
       min-height:
-        54px;
+        52px;
 
       margin-top:
-        20px;
+        18px;
 
       display:
         inline-flex;
@@ -631,10 +713,11 @@
         );
 
       color:
-        #ffffff;
+        #ffffff
+        !important;
 
       font-size:
-        0.96rem;
+        0.94rem;
 
       font-weight:
         700;
@@ -651,7 +734,7 @@
     }
 
 
-    .delete-button:hover {
+    .action-button:hover {
 
       transform:
         translateY(-2px);
@@ -670,18 +753,11 @@
     }
 
 
-    .email {
+    /* =========================
+       BOTÃO VOLTAR
+    ========================== */
 
-      color:
-        #38bdf8;
-
-      font-weight:
-        700;
-
-    }
-
-
-    .back {
+    .back-wrapper {
 
       margin-top:
         35px;
@@ -692,13 +768,53 @@
     }
 
 
-    .back a {
+    .back-button {
+
+      min-height:
+        48px;
+
+      display:
+        inline-flex;
+
+      align-items:
+        center;
+
+      justify-content:
+        center;
+
+      padding:
+        0
+        24px;
+
+      border-radius:
+        10px;
+
+      background:
+        #0f172a;
+
+      border:
+        1px solid
+        #334155;
 
       color:
-        #7dd3fc;
+        #cbd5e1;
+
+      font-size:
+        0.92rem;
 
       font-weight:
         700;
+
+    }
+
+
+    .back-button:hover {
+
+      border-color:
+        #38bdf8;
+
+      color:
+        #ffffff;
 
     }
 
@@ -710,7 +826,8 @@
     footer {
 
       padding:
-        35px;
+        35px
+        0;
 
       border-top:
         1px solid
@@ -729,7 +846,7 @@
 
 
     /* =========================
-       MOBILE
+       RESPONSIVO
     ========================== */
 
     @media (
@@ -774,13 +891,33 @@
       }
 
 
-      .card {
+      .app-icon {
+
+        width:
+          72px;
+
+        height:
+          72px;
+
+      }
+
+
+      .delete-card {
 
         padding:
           28px
           22px;
 
       }
+
+
+      .delete-card h2 {
+
+        font-size:
+          1.2rem;
+
+      }
+
 
     }
 
@@ -792,7 +929,9 @@
 <body>
 
 
-  <!-- HEADER -->
+  <!-- =========================
+       HEADER
+  ========================== -->
 
   <header>
 
@@ -855,7 +994,9 @@
   <main>
 
 
-    <!-- HERO -->
+    <!-- =========================
+         HERO
+    ========================== -->
 
     <section class="hero">
 
@@ -865,7 +1006,7 @@
 
         <img
           src="assets/falaak.png"
-          alt="Ícone do Falaak"
+          alt="Ícone do aplicativo Falaak"
           class="app-icon">
 
 
@@ -885,10 +1026,10 @@
 
         <p>
 
-          Nesta página você pode solicitar
-          a exclusão permanente da sua conta
-          do Falaak e dos dados associados
-          a ela.
+          Nesta página você pode iniciar
+          a solicitação de exclusão permanente
+          da sua conta do Falaak e dos
+          dados associados.
 
         </p>
 
@@ -899,32 +1040,47 @@
     </section>
 
 
-    <!-- CONTEÚDO -->
+    <!-- =========================
+         CONTEÚDO
+    ========================== -->
 
-    <div class="content">
+    <div class="delete-content">
 
 
       <div class="container">
 
 
-        <article class="card">
+        <article class="delete-card">
 
+
+          <div class="updated">
+
+            Última atualização:
+            28 de julho de 2026
+
+          </div>
+
+
+          <!-- =========================
+               1
+          ========================== -->
 
           <section>
 
 
             <h2>
-              Como solicitar a exclusão
+              1. Como solicitar a exclusão
             </h2>
 
 
             <p>
 
               Para solicitar a exclusão
-              da sua conta do
+              permanente da sua conta do
               <strong>Falaak</strong>,
-              envie uma solicitação para
-              o e-mail de suporte da Lima Apps.
+              envie uma mensagem para
+              o e-mail de suporte
+              da Lima Apps.
 
             </p>
 
@@ -935,33 +1091,36 @@
                 E-mail:
               </strong>
 
-              <span class="email">
-                limaapps@hotmail.com
-              </span>
+              limaapps@hotmail.com
 
             </div>
 
 
             <p>
+
               Na mensagem, informe:
+
             </p>
 
 
             <ul>
 
               <li>
-                o endereço de e-mail utilizado
-                na sua conta do Falaak;
+                o endereço de e-mail
+                utilizado na conta
+                do Falaak;
               </li>
 
               <li>
-                seu nome de usuário ou nome
-                do perfil, caso possua;
+                seu nome de usuário
+                ou nome do perfil,
+                quando disponível;
               </li>
 
               <li>
                 que deseja excluir
-                permanentemente sua conta.
+                permanentemente sua conta
+                e os dados associados.
               </li>
 
             </ul>
@@ -974,16 +1133,18 @@
               </strong>
 
               nunca envie sua senha.
-              A Lima Apps não precisa da
-              sua senha para processar
-              uma solicitação de exclusão.
+
+              A Lima Apps não precisa
+              da senha da sua Conta Google
+              para processar uma solicitação
+              de exclusão.
 
             </div>
 
 
             <a
-              class="delete-button"
-              href="mailto:limaapps@hotmail.com?subject=Solicitação%20de%20exclusão%20de%20conta%20-%20Falaak&body=Olá,%0D%0A%0D%0AGostaria%20de%20solicitar%20a%20exclusão%20permanente%20da%20minha%20conta%20do%20Falaak.%0D%0A%0D%0AE-mail%20da%20conta:%20%0D%0ANome%20de%20usuário/perfil:%20%0D%0A%0D%0AEstou%20ciente%20de%20que%20a%20exclusão%20da%20conta%20é%20permanente.">
+              class="action-button"
+              href="mailto:limaapps@hotmail.com?subject=Solicitação%20de%20exclusão%20de%20conta%20-%20Falaak&body=Olá,%0D%0A%0D%0AGostaria%20de%20solicitar%20a%20exclusão%20permanente%20da%20minha%20conta%20do%20Falaak%20e%20dos%20dados%20associados.%0D%0A%0D%0AE-mail%20da%20conta:%20%0D%0ANome%20de%20usuário/perfil:%20%0D%0A%0D%0AEstou%20ciente%20de%20que%20a%20exclusão%20da%20conta%20é%20permanente.">
 
               Solicitar exclusão da conta
 
@@ -993,55 +1154,187 @@
           </section>
 
 
+          <!-- =========================
+               2
+          ========================== -->
+
           <section>
 
 
             <h2>
-              O que será excluído?
+              2. Prazo para atendimento
             </h2>
 
 
             <p>
 
-              Quando uma solicitação de
-              exclusão for confirmada,
-              a conta do usuário e os dados
-              associados mantidos pelo Falaak
-              serão excluídos, de acordo
-              com a Política de Privacidade
-              do aplicativo.
+              Após o recebimento
+              da solicitação,
+              poderá ser necessária
+              a confirmação da identidade
+              do titular da conta.
 
             </p>
 
 
-            <p>
+            <div class="highlight">
 
-              Isso inclui as informações
-              associadas à conta e ao perfil
-              do usuário armazenadas pelo
-              serviço.
+              <strong>
+                Prazo:
+              </strong>
 
-            </p>
+              após a confirmação
+              da identidade e da solicitação,
+              o processo de exclusão
+              será concluído em
+
+              <strong>
+                até 7 dias.
+              </strong>
+
+            </div>
 
 
           </section>
 
 
+          <!-- =========================
+               3
+          ========================== -->
+
           <section>
 
 
             <h2>
-              A exclusão é permanente
+              3. O que será excluído?
             </h2>
 
 
             <p>
 
-              A exclusão da conta é
-              permanente. Depois que o
-              processo for concluído,
+              Após a confirmação
+              da solicitação,
+              a conta e os dados associados
+              ao Falaak serão excluídos
+              permanentemente.
+
+            </p>
+
+
+            <p>
+
+              A exclusão inclui,
+              quando existentes
+              e associados à conta:
+
+            </p>
+
+
+            <ul>
+
+              <li>
+                dados da conta
+                e do perfil;
+              </li>
+
+              <li>
+                nome de exibição;
+              </li>
+
+              <li>
+                nome de usuário;
+              </li>
+
+              <li>
+                foto de perfil;
+              </li>
+
+              <li>
+                publicações realizadas
+                pelo usuário;
+              </li>
+
+              <li>
+                comentários;
+              </li>
+
+              <li>
+                votos;
+              </li>
+
+              <li>
+                reações;
+              </li>
+
+              <li>
+                imagens enviadas
+                ou publicadas;
+              </li>
+
+              <li>
+                denúncias associadas
+                à conta;
+              </li>
+
+              <li>
+                registros de bloqueios
+                de outros usuários;
+              </li>
+
+              <li>
+                notificações associadas
+                à conta;
+              </li>
+
+              <li>
+                outros dados diretamente
+                vinculados à conta
+                no Falaak.
+              </li>
+
+            </ul>
+
+
+          </section>
+
+
+          <!-- =========================
+               4
+          ========================== -->
+
+          <section>
+
+
+            <h2>
+              4. A exclusão é permanente
+            </h2>
+
+
+            <p>
+
+              A exclusão da conta
+              é permanente.
+
+            </p>
+
+
+            <p>
+
+              Depois que o processo
+              for concluído,
               a conta e os dados excluídos
-              não poderão ser recuperados.
+              não poderão ser recuperados
+              por meio do Falaak.
+
+            </p>
+
+
+            <p>
+
+              Para voltar a utilizar
+              o aplicativo após a exclusão,
+              poderá ser necessário
+              criar uma nova conta.
 
             </p>
 
@@ -1049,21 +1342,65 @@
           </section>
 
 
+          <!-- =========================
+               5
+          ========================== -->
+
           <section>
 
 
             <h2>
-              Verificação da solicitação
+              5. Conteúdo compartilhado com terceiros
             </h2>
 
 
             <p>
 
-              Por motivos de segurança,
+              A exclusão remove os dados
+              mantidos pelos sistemas
+              controlados pelo Falaak
+              conforme descrito nesta página.
+
+            </p>
+
+
+            <p>
+
+              Entretanto, conteúdos
+              que tenham sido copiados,
+              capturados, compartilhados
+              ou armazenados por outros
+              usuários fora dos sistemas
+              controlados pela Lima Apps
+              não podem ser removidos
+              pela Lima Apps.
+
+            </p>
+
+
+          </section>
+
+
+          <!-- =========================
+               6
+          ========================== -->
+
+          <section>
+
+
+            <h2>
+              6. Verificação da solicitação
+            </h2>
+
+
+            <p>
+
+              Para proteger a conta
+              contra solicitações fraudulentas,
               a Lima Apps poderá solicitar
-              informações necessárias para
-              confirmar que a solicitação
-              foi realizada pelo titular
+              informações razoáveis
+              para confirmar que o pedido
+              foi realizado pelo titular
               da conta.
 
             </p>
@@ -1071,8 +1408,100 @@
 
             <p>
 
-              Nunca será solicitada
-              a senha da conta.
+              Essa confirmação pode utilizar
+              informações relacionadas
+              à própria conta do Falaak.
+
+            </p>
+
+
+            <div class="warning">
+
+              A Lima Apps nunca solicitará
+              a senha da sua Conta Google
+              para realizar a exclusão.
+
+            </div>
+
+
+          </section>
+
+
+          <!-- =========================
+               7
+          ========================== -->
+
+          <section>
+
+
+            <h2>
+              7. Retenção de informações
+            </h2>
+
+
+            <p>
+
+              Como regra geral,
+              os dados associados à conta
+              serão excluídos juntamente
+              com a conta do usuário.
+
+            </p>
+
+
+            <p>
+
+              Determinadas informações
+              poderão ser mantidas
+              temporariamente quando isso
+              for necessário para:
+
+            </p>
+
+
+            <ul>
+
+              <li>
+                cumprimento de obrigação
+                legal ou regulatória;
+              </li>
+
+              <li>
+                segurança da plataforma;
+              </li>
+
+              <li>
+                prevenção de fraude;
+              </li>
+
+              <li>
+                investigação de abuso
+                ou atividade indevida;
+              </li>
+
+              <li>
+                exercício regular
+                de direitos.
+              </li>
+
+            </ul>
+
+
+            <p>
+
+              Nesses casos,
+              os dados serão mantidos
+              apenas pelo período necessário
+              para a finalidade aplicável.
+
+            </p>
+
+
+            <p>
+
+              Essas informações não serão
+              utilizadas para manter
+              uma conta ativa no Falaak.
 
             </p>
 
@@ -1080,34 +1509,47 @@
           </section>
 
 
+          <!-- =========================
+               8
+          ========================== -->
+
           <section>
 
 
             <h2>
-              Retenção de informações
+              8. Excluir conteúdo sem excluir a conta
             </h2>
 
 
             <p>
 
-              Caso determinadas informações
-              precisem ser mantidas por
-              obrigação legal, segurança,
-              prevenção de fraude ou outro
-              motivo legítimo, elas poderão
-              ser conservadas somente pelo
-              período necessário para essa
-              finalidade.
+              Quando a funcionalidade
+              estiver disponível no aplicativo,
+              o usuário poderá excluir
+              determinados conteúdos
+              ou interações individuais
+              sem excluir toda a conta.
 
             </p>
 
 
             <p>
 
-              As práticas aplicáveis de
-              tratamento e retenção de dados
-              serão descritas na Política
-              de Privacidade do Falaak.
+              Isso pode incluir,
+              conforme os recursos
+              disponíveis no Falaak,
+              publicações e outras
+              informações gerenciáveis
+              diretamente pelo usuário.
+
+            </p>
+
+
+            <p>
+
+              A exclusão completa da conta
+              segue o procedimento descrito
+              nesta página.
 
             </p>
 
@@ -1115,31 +1557,89 @@
           </section>
 
 
+          <!-- =========================
+               9
+          ========================== -->
+
           <section>
 
 
             <h2>
-              Política de Privacidade
+              9. Política de Privacidade
             </h2>
 
 
             <p>
 
-              Para saber mais sobre como
-              o Falaak trata informações,
-              consulte a Política de Privacidade
-              do aplicativo.
+              Para saber mais sobre
+              como o Falaak trata
+              informações de conta,
+              perfil, conteúdos,
+              interações e publicidade,
+              consulte a Política
+              de Privacidade do aplicativo.
+
+            </p>
+
+
+            <a
+              href="politica-falaak.html"
+              class="action-button">
+
+              Ver Política de Privacidade
+              do Falaak
+
+            </a>
+
+
+          </section>
+
+
+          <!-- =========================
+               10
+          ========================== -->
+
+          <section>
+
+
+            <h2>
+              10. Contato
+            </h2>
+
+
+            <p>
+
+              Em caso de dúvidas
+              sobre o processo
+              de exclusão da conta,
+              entre em contato
+              com a Lima Apps.
 
             </p>
 
 
             <p>
+
+              E-mail:
 
               <a
-                class="email"
-                href="politica-falaak.html">
+                href="mailto:limaapps@hotmail.com">
 
-                Política de Privacidade do Falaak
+                limaapps@hotmail.com
+
+              </a>
+
+            </p>
+
+
+            <p>
+
+              Site:
+
+              <a
+                href="https://www.limaapps.com.br/">
+
+                www.limaapps.com.br
 
               </a>
 
@@ -1152,10 +1652,16 @@
         </article>
 
 
-        <div class="back">
+        <!-- =========================
+             VOLTAR
+        ========================== -->
+
+        <div class="back-wrapper">
 
 
-          <a href="index.html">
+          <a
+            href="index.html"
+            class="back-button">
 
             ← Voltar para Lima Apps
 
@@ -1174,10 +1680,20 @@
   </main>
 
 
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
   <footer>
 
-    © 2026 Lima Apps.
-    Todos os direitos reservados.
+
+    <div class="container">
+
+      © 2026 Lima Apps.
+      Todos os direitos reservados.
+
+    </div>
+
 
   </footer>
 
