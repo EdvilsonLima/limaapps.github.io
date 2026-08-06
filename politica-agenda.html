@@ -1,204 +1,1006 @@
 <!DOCTYPE html>
-
 <html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Política de Privacidade - Agenda Recorrente</title>
+  <!-- =========================
+       GOOGLE ANALYTICS
+  ========================== -->
+
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-JVSNZ2MCJT">
+  </script>
+
+  <script>
+
+    window.dataLayer =
+      window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag(
+      'js',
+      new Date()
+    );
+
+    gtag(
+      'config',
+      'G-JVSNZ2MCJT'
+    );
+
+  </script>
+
+
+  <!-- =========================
+       CONFIGURAÇÕES DA PÁGINA
+  ========================== -->
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+  <title>
+    Política de Privacidade - Agenda Recorrente
+  </title>
+
+  <meta
+    name="description"
+    content="Política de Privacidade do aplicativo Agenda Recorrente, desenvolvido pela Lima Apps.">
+
+  <meta
+    name="author"
+    content="Lima Apps">
+
+  <meta
+    name="robots"
+    content="index, follow">
+
+  <meta
+    name="theme-color"
+    content="#020617">
+
+  <link
+    rel="canonical"
+    href="https://www.limaapps.com.br/politica-agenda.html">
+
+
+  <!-- =========================
+       FAVICON
+  ========================== -->
+
+  <link
+    rel="icon"
+    type="image/png"
+    href="assets/lima-apps-icon.png">
+
+  <link
+    rel="apple-touch-icon"
+    href="assets/lima-apps-icon.png">
+
 
   <style>
 
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family:Arial, Helvetica, sans-serif;
+    /* =========================
+       CONFIGURAÇÕES GERAIS
+    ========================== */
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    body{
-      background:#0f172a;
-      color:white;
-      padding:40px 8%;
-      line-height:1.8;
+
+    html {
+      scroll-behavior: smooth;
     }
 
-    .container{
-      max-width:900px;
-      margin:auto;
+
+    body {
+      min-height: 100vh;
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+      background: #020617;
+      color: #f8fafc;
+
+      line-height: 1.7;
+
+      -webkit-font-smoothing: antialiased;
     }
 
-    h1{
-      color:#38bdf8;
-      margin-bottom:10px;
-      font-size:42px;
+
+    a {
+      color: inherit;
+      text-decoration: none;
     }
 
-    .subtitle{
-      color:#94a3b8;
-      margin-bottom:40px;
+
+    img {
+      display: block;
+      max-width: 100%;
     }
 
-    h2{
-      margin-top:35px;
-      margin-bottom:12px;
-      color:#38bdf8;
-      font-size:26px;
+
+    .container {
+      width: min(920px, 92%);
+      margin: 0 auto;
     }
 
-    p{
-      color:#cbd5e1;
-      margin-bottom:14px;
+
+    /* =========================
+       CABEÇALHO
+    ========================== */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+
+      background:
+        rgba(
+          2,
+          6,
+          23,
+          0.95
+        );
+
+      backdrop-filter: blur(12px);
+
+      border-bottom:
+        1px solid
+        rgba(
+          148,
+          163,
+          184,
+          0.12
+        );
     }
 
-    ul{
-      margin-left:20px;
-      color:#cbd5e1;
-      margin-bottom:20px;
+
+    .navbar {
+      width: min(1180px, 92%);
+      min-height: 72px;
+
+      margin: 0 auto;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 30px;
     }
 
-    a{
-      color:#38bdf8;
-      text-decoration:none;
+
+    /* =========================
+       LOGO
+    ========================== */
+
+    .logo {
+      display: flex;
+      align-items: center;
+
+      gap: 11px;
+
+      color: #f8fafc;
+
+      font-size: 1.4rem;
+      font-weight: 700;
     }
 
-    .btn{
-      display:inline-block;
-      margin-top:40px;
-      background:#38bdf8;
-      color:#020617;
-      padding:14px 22px;
-      border-radius:12px;
-      text-decoration:none;
-      font-weight:bold;
+
+    .logo img {
+      width: 42px;
+      height: 42px;
+
+      object-fit: contain;
+
+      border-radius: 10px;
+    }
+
+
+    .logo span {
+      color: #38bdf8;
+    }
+
+
+    /* =========================
+       NAVEGAÇÃO
+    ========================== */
+
+    nav {
+      display: flex;
+      align-items: center;
+
+      gap: 25px;
+    }
+
+
+    nav a {
+      color: #cbd5e1;
+
+      font-size: 0.92rem;
+
+      transition:
+        color
+        0.2s ease;
+    }
+
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+
+    /* =========================
+       HERO
+    ========================== */
+
+    .hero {
+      position: relative;
+
+      overflow: hidden;
+
+      padding:
+        85px
+        0
+        60px;
+
+      text-align: center;
+    }
+
+
+    .hero::before {
+      content: "";
+
+      position: absolute;
+
+      width: 500px;
+      height: 500px;
+
+      top: -330px;
+      left: 50%;
+
+      transform:
+        translateX(-50%);
+
+      background:
+        rgba(
+          56,
+          189,
+          248,
+          0.14
+        );
+
+      filter:
+        blur(100px);
+
+      border-radius: 50%;
+
+      pointer-events: none;
+    }
+
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+
+    .app-icon {
+      width: 86px;
+      height: 86px;
+
+      margin:
+        0 auto
+        24px;
+
+      object-fit: cover;
+
+      background: #1e293b;
+
+      border-radius: 20px;
+
+      box-shadow:
+        0
+        18px
+        40px
+        rgba(
+          0,
+          0,
+          0,
+          0.35
+        );
+    }
+
+
+    .hero-label {
+      display: inline-block;
+
+      margin-bottom: 15px;
+
+      color: #38bdf8;
+
+      font-size: 0.82rem;
+      font-weight: 700;
+
+      text-transform: uppercase;
+
+      letter-spacing: 1.5px;
+    }
+
+
+    .hero h1 {
+      margin: 0;
+
+      color: #f8fafc;
+
+      font-size:
+        clamp(
+          2rem,
+          5vw,
+          3.4rem
+        );
+
+      line-height: 1.15;
+    }
+
+
+    .subtitle {
+      margin-top: 18px;
+
+      color: #cbd5e1;
+
+      font-size: 1.08rem;
+      font-weight: 700;
+    }
+
+
+    .updated {
+      margin-top: 8px;
+
+      color: #64748b;
+
+      font-size: 0.9rem;
+    }
+
+
+    /* =========================
+       CONTEÚDO DA POLÍTICA
+    ========================== */
+
+    .privacy-content {
+      padding-bottom: 90px;
+    }
+
+
+    .privacy-card {
+      padding: 42px;
+
+      background: #0f172a;
+
+      border:
+        1px solid
+        #1e293b;
+
+      border-radius: 20px;
+
+      box-shadow:
+        0
+        20px
+        50px
+        rgba(
+          0,
+          0,
+          0,
+          0.2
+        );
+    }
+
+
+    .privacy-card section {
+      margin-bottom: 34px;
+    }
+
+
+    .privacy-card section:last-child {
+      margin-bottom: 0;
+    }
+
+
+    .privacy-card h2 {
+      margin-bottom: 12px;
+
+      color: #f8fafc;
+
+      font-size: 1.35rem;
+      line-height: 1.35;
+    }
+
+
+    .privacy-card p {
+      margin-bottom: 14px;
+
+      color: #cbd5e1;
+    }
+
+
+    .privacy-card p:last-child {
+      margin-bottom: 0;
+    }
+
+
+    .privacy-card ul {
+      margin:
+        8px
+        0
+        16px
+        22px;
+
+      color: #cbd5e1;
+    }
+
+
+    .privacy-card li {
+      margin-bottom: 6px;
+    }
+
+
+    .privacy-card a {
+      color: #38bdf8;
+
+      font-weight: 600;
+
+      word-break: break-word;
+    }
+
+
+    .privacy-card a:hover {
+      color: #7dd3fc;
+      text-decoration: underline;
+    }
+
+
+    /* =========================
+       CONTATO
+    ========================== */
+
+    .contact {
+      display: inline-flex;
+
+      padding:
+        12px
+        18px;
+
+      background:
+        rgba(
+          56,
+          189,
+          248,
+          0.08
+        );
+
+      border:
+        1px solid
+        rgba(
+          56,
+          189,
+          248,
+          0.2
+        );
+
+      border-radius: 10px;
+
+      color: #38bdf8 !important;
+
+      font-weight: 700;
+    }
+
+
+    /* =========================
+       BOTÃO VOLTAR
+    ========================== */
+
+    .back-wrapper {
+      margin-top: 35px;
+
+      text-align: center;
+    }
+
+
+    .btn {
+      min-height: 48px;
+
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      padding:
+        0
+        24px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #38bdf8,
+          #2563eb
+        );
+
+      border-radius: 10px;
+
+      color: #ffffff;
+
+      font-size: 0.92rem;
+      font-weight: 700;
+
+      transition:
+        transform
+        0.2s ease,
+        box-shadow
+        0.2s ease;
+    }
+
+
+    .btn:hover {
+      color: #ffffff;
+      text-decoration: none;
+
+      transform:
+        translateY(-2px);
+
+      box-shadow:
+        0
+        10px
+        25px
+        rgba(
+          37,
+          99,
+          235,
+          0.3
+        );
+    }
+
+
+    /* =========================
+       RODAPÉ
+    ========================== */
+
+    footer {
+      padding:
+        35px
+        0;
+
+      border-top:
+        1px solid
+        #1e293b;
+
+      text-align: center;
+
+      color: #64748b;
+
+      font-size: 0.85rem;
+    }
+
+
+    /* =========================
+       RESPONSIVO
+    ========================== */
+
+    @media (max-width: 680px) {
+
+      .navbar {
+        min-height: 64px;
+      }
+
+
+      .logo {
+        font-size: 1.2rem;
+      }
+
+
+      .logo img {
+        width: 38px;
+        height: 38px;
+      }
+
+
+      nav a:not(:last-child) {
+        display: none;
+      }
+
+
+      .hero {
+        padding:
+          65px
+          0
+          45px;
+      }
+
+
+      .app-icon {
+        width: 72px;
+        height: 72px;
+      }
+
+
+      .subtitle {
+        font-size: 1rem;
+      }
+
+
+      .privacy-card {
+        padding:
+          28px
+          22px;
+      }
+
+
+      .privacy-card h2 {
+        font-size: 1.2rem;
+      }
+
+
+      .contact {
+        width: 100%;
+
+        justify-content: center;
+      }
+
+
+      .btn {
+        width: 100%;
+      }
+
     }
 
   </style>
 
 </head>
 
+
 <body>
 
-  <div class="container">
 
-<h1>Política de Privacidade</h1>
+  <!-- =========================
+       CABEÇALHO
+  ========================== -->
 
-<p class="subtitle">
-  Aplicativo Agenda Recorrente
-  <br>
-  Última atualização: 19/03/2026
-</p>
+  <header>
 
-<p>
-  Este aplicativo respeita a sua privacidade.
-  Esta Política de Privacidade explica como as informações são tratadas.
-</p>
+    <div class="navbar">
 
-<h2>1. Coleta de informações</h2>
+      <a
+        href="index.html"
+        class="logo"
+        aria-label="Lima Apps - Página inicial">
 
-<p>
-  Este aplicativo não coleta, armazena ou compartilha dados pessoais diretamente.
-</p>
+        <img
+          src="assets/lima-apps-icon.png"
+          alt="Lima Apps">
 
-<p>
-  No entanto, serviços de terceiros utilizados no aplicativo podem coletar informações automaticamente,
-  como dados de uso e identificadores do dispositivo.
-</p>
+        Lima
 
-<h2>2. Uso de anúncios</h2>
+        <span>
+          Apps
+        </span>
 
-<p>
-  Este aplicativo utiliza o Google AdMob para exibição de anúncios.
-</p>
+      </a>
 
-<p>
-  O AdMob pode coletar e usar dados para fornecer anúncios personalizados
-  ou não personalizados, incluindo:
-</p>
 
-<ul>
-  <li>Identificadores de dispositivo</li>
-  <li>Dados de uso</li>
-  <li>Informações aproximadas de localização</li>
-</ul>
+      <nav>
 
-<p>
-  Para mais informações, consulte a política de privacidade do Google:
-  <br><br>
+        <a href="index.html#apps">
+          Aplicativos
+        </a>
 
-  <a href="https://policies.google.com/privacy" target="_blank">
-    https://policies.google.com/privacy
-  </a>
-</p>
+        <a href="politicas.html">
+          Políticas
+        </a>
 
-<h2>3. Funcionalidades do aplicativo</h2>
+        <a href="index.html#sobre">
+          Sobre
+        </a>
 
-<p>
-  O aplicativo pode direcionar o usuário para aplicativos externos, como:
-</p>
+        <a href="mailto:limaapps@hotmail.com">
+          Contato
+        </a>
 
-<ul>
-  <li>WhatsApp</li>
-  <li>Aplicativo de telefone (ligações)</li>
-  <li>Aplicativo de mensagens SMS</li>
-</ul>
+      </nav>
 
-<p>
-  Essas ações são iniciadas apenas quando o usuário interage com o aplicativo.
-</p>
+    </div>
 
-<h2>4. Permissões</h2>
+  </header>
 
-<p>
-  O aplicativo pode solicitar permissões necessárias para:
-</p>
 
-<ul>
-  <li>Realizar chamadas telefônicas</li>
-  <li>Enviar mensagens SMS</li>
-</ul>
+  <main>
 
-<p>
-  Essas permissões são utilizadas apenas para executar funcionalidades solicitadas pelo usuário.
-</p>
 
-<h2>5. Compartilhamento de dados</h2>
+    <!-- =========================
+         HERO
+    ========================== -->
 
-<p>
-  O aplicativo não compartilha dados pessoais diretamente.
-  No entanto, serviços de terceiros como o AdMob podem coletar informações conforme descrito acima.
-</p>
+    <section class="hero">
 
-<h2>6. Segurança</h2>
+      <div class="container hero-content">
 
-<p>
-  O aplicativo não armazena dados pessoais do usuário.
-</p>
+        <img
+          src="assets/agenda-recorrente.png"
+          alt="Ícone do aplicativo Agenda Recorrente"
+          class="app-icon">
 
-<h2>7. Alterações nesta política</h2>
+        <span class="hero-label">
+          Política de Privacidade
+        </span>
 
-<p>
-  Esta Política de Privacidade pode ser atualizada periodicamente.
-</p>
+        <h1>
+          Política de Privacidade
+        </h1>
 
-<h2>8. Contato</h2>
+        <p class="subtitle">
+          Aplicativo Agenda Recorrente
+        </p>
 
-<p>
-  Se você tiver dúvidas, entre em contato:
-</p>
+        <p class="updated">
+          Última atualização: 19/03/2026
+        </p>
 
-<p>
-  limaapps@hotmail.com
-</p>
+      </div>
 
-<a class="btn" href="https://limaapps.com.br">
-  Voltar para o site
-</a>
+    </section>
 
-  </div>
+
+    <!-- =========================
+         POLÍTICA
+    ========================== -->
+
+    <div class="privacy-content">
+
+      <div class="container">
+
+        <article class="privacy-card">
+
+
+          <section>
+
+            <p>
+              Este aplicativo respeita a sua privacidade.
+              Esta Política de Privacidade explica como as informações são tratadas.
+            </p>
+
+          </section>
+
+
+          <section>
+
+            <h2>
+              1. Coleta de informações
+            </h2>
+
+            <p>
+              Este aplicativo não coleta, armazena ou compartilha dados pessoais diretamente.
+            </p>
+
+            <p>
+              No entanto, serviços de terceiros utilizados no aplicativo podem coletar informações automaticamente,
+              como dados de uso e identificadores do dispositivo.
+            </p>
+
+          </section>
+
+
+          <section>
+
+            <h2>
+              2. Uso de anúncios
+            </h2>
+
+            <p>
+              Este aplicativo utiliza o Google AdMob para exibição de anúncios.
+            </p>
+
+            <p>
+              O AdMob pode coletar e usar dados para fornecer anúncios personalizados
+              ou não personalizados, incluindo:
+            </p>
+
+            <ul>
+
+              <li>
+                Identificadores de dispositivo
+              </li>
+
+              <li>
+                Dados de uso
+              </li>
+
+              <li>
+                Informações aproximadas de localização
+              </li>
+
+            </ul>
+
+            <p>
+              Para mais informações, consulte a política de privacidade do Google:
+              <br><br>
+
+              <a
+                href="https://policies.google.com/privacy"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                https://policies.google.com/privacy
+
+              </a>
+            </p>
+
+          </section>
+
+
+          <section>
+
+            <h2>
+              3. Funcionalidades do aplicativo
+            </h2>
+
+            <p>
+              O aplicativo pode direcionar o usuário para aplicativos externos, como:
+            </p>
+
+            <ul>
+
+              <li>
+                WhatsApp
+              </li>
+
+              <li>
+                Aplicativo de telefone (ligações)
+              </li>
+
+              <li>
+                Aplicativo de mensagens SMS
+              </li>
+
+            </ul>
+
+            <p>
+              Essas ações são iniciadas apenas quando o usuário interage com o aplicativo.
+            </p>
+
+          </section>
+
+
+          <section>
+
+            <h2>
+              4. Permissões
+            </h2>
+
+            <p>
+              O aplicativo pode solicitar permissões necessárias para:
+            </p>
+
+            <ul>
+
+              <li>
+                Realizar chamadas telefônicas
+              </li>
+
+              <li>
+                Enviar mensagens SMS
+              </li>
+
+            </ul>
+
+            <p>
+              Essas permissões são utilizadas apenas para executar funcionalidades solicitadas pelo usuário.
+            </p>
+
+          </section>
+
+
+          <section>
+
+            <h2>
+              5. Compartilhamento de dados
+            </h2>
+
+            <p>
+              O aplicativo não compartilha dados pessoais diretamente.
+              No entanto, serviços de terceiros como o AdMob podem coletar informações conforme descrito acima.
+            </p>
+
+          </section>
+
+
+          <section>
+
+            <h2>
+              6. Segurança
+            </h2>
+
+            <p>
+              O aplicativo não armazena dados pessoais do usuário.
+            </p>
+
+          </section>
+
+
+          <section>
+
+            <h2>
+              7. Alterações nesta política
+            </h2>
+
+            <p>
+              Esta Política de Privacidade pode ser atualizada periodicamente.
+            </p>
+
+          </section>
+
+
+          <section>
+
+            <h2>
+              8. Contato
+            </h2>
+
+            <p>
+              Se você tiver dúvidas, entre em contato:
+            </p>
+
+            <p class="contact">
+              limaapps@hotmail.com
+            </p>
+
+          </section>
+
+
+        </article>
+
+
+        <div class="back-wrapper">
+
+          <a
+            class="btn"
+            href="https://limaapps.com.br">
+
+            Voltar para o site
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+  <!-- =========================
+       RODAPÉ
+  ========================== -->
+
+  <footer>
+
+    <div class="container">
+
+      © 2026 Lima Apps.
+      Todos os direitos reservados.
+
+    </div>
+
+  </footer>
+
 
 </body>
 
 </html>
-
