@@ -1,0 +1,562 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#020617">
+  <meta name="description" content="Solicite a exclusão da conta e dos dados do aplicativo Agenda de Serviços e Clientes, da Lima Apps.">
+
+  <title>Exclusão de conta e dados | Agenda de Serviços e Clientes - Lima Apps</title>
+
+  <link rel="icon" href="assets/lima-apps-icon.png" type="image/png">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: #020617;
+      color: #f8fafc;
+      font: 16px/1.7 Arial, Helvetica, sans-serif;
+    }
+
+    a {
+      color: #38bdf8;
+      overflow-wrap: anywhere;
+    }
+
+    header {
+      border-bottom: 1px solid #1e293b;
+      background: rgba(2, 6, 23, 0.96);
+    }
+
+    .nav {
+      max-width: 1120px;
+      width: 92%;
+      height: 72px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: white;
+      font-weight: 700;
+      font-size: 1.4rem;
+    }
+
+    .brand img {
+      width: 42px;
+      height: 42px;
+      object-fit: contain;
+      border-radius: 9px;
+    }
+
+    .brand span {
+      color: #38bdf8;
+    }
+
+    .navlinks a {
+      margin-left: 18px;
+      color: #cbd5e1;
+      text-decoration: none;
+      font-size: 0.93rem;
+    }
+
+    .wrap {
+      width: min(920px, 92%);
+      margin: auto;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 70px 0 48px;
+    }
+
+    .hero img {
+      width: 78px;
+      height: 78px;
+      object-fit: cover;
+      border-radius: 18px;
+      margin: 0 auto 20px;
+      display: block;
+    }
+
+    .kicker {
+      color: #38bdf8;
+      letter-spacing: 1.3px;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      line-height: 1.2;
+      margin: 12px 0;
+    }
+
+    h2 {
+      font-size: 1.34rem;
+      margin: 0 0 12px;
+      color: white;
+    }
+
+    h3 {
+      font-size: 1.03rem;
+      margin: 20px 0 8px;
+      color: #e2e8f0;
+    }
+
+    .sub {
+      color: #cbd5e1;
+      margin: 8px 0;
+    }
+
+    .card {
+      background: #0f172a;
+      border: 1px solid #1e293b;
+      border-radius: 20px;
+      padding: 40px;
+      margin: 0 0 70px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+    }
+
+    section + section {
+      margin-top: 34px;
+    }
+
+    p, li {
+      color: #cbd5e1;
+    }
+
+    p {
+      margin: 0 0 13px;
+    }
+
+    ul, ol {
+      padding-left: 25px;
+      margin: 8px 0 16px;
+    }
+
+    li {
+      margin: 7px 0;
+    }
+
+    .action {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #38bdf8, #2563eb);
+      color: white;
+      font-weight: 700;
+      padding: 13px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      margin: 12px 0 8px;
+      min-height: 48px;
+    }
+
+    .note {
+      background: rgba(56, 189, 248, 0.07);
+      border-left: 3px solid #38bdf8;
+      border-radius: 8px;
+      padding: 14px 16px;
+      margin: 15px 0;
+    }
+
+    .note p {
+      margin: 0;
+    }
+
+    .small {
+      font-size: 0.91rem;
+      color: #94a3b8;
+    }
+
+    footer {
+      border-top: 1px solid #1e293b;
+      color: #94a3b8;
+      text-align: center;
+      padding: 25px;
+    }
+
+    .back {
+      text-align: center;
+      margin: 30px 0 0;
+    }
+
+    @media (max-width: 680px) {
+      .nav {
+        height: 64px;
+      }
+
+      .brand {
+        font-size: 1.18rem;
+      }
+
+      .brand img {
+        width: 36px;
+        height: 36px;
+      }
+
+      .navlinks a:not(:last-child) {
+        display: none;
+      }
+
+      .hero {
+        padding: 52px 0 34px;
+      }
+
+      .card {
+        padding: 26px 20px;
+      }
+
+      .action {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- CABEÇALHO -->
+
+  <header>
+    <div class="nav">
+
+      <a class="brand" href="index.html">
+        <img src="assets/lima-apps-icon.png" alt="Lima Apps">
+        Lima <span>Apps</span>
+      </a>
+
+      <nav class="navlinks">
+        <a href="index.html#apps">Aplicativos</a>
+        <a href="politicas.html">Políticas</a>
+        <a href="mailto:limaapps@hotmail.com">Contato</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <!-- APRESENTAÇÃO -->
+
+    <div class="hero">
+
+      <img
+        src="assets/agenda-recorrente.png"
+        alt="Ícone do aplicativo Agenda de Serviços e Clientes">
+
+      <span class="kicker">
+        Privacidade e seus direitos
+      </span>
+
+      <h1>Exclusão de conta e dados</h1>
+
+      <p class="sub">
+        Aplicativo <strong>Agenda de Serviços e Clientes</strong>
+        · Desenvolvedor: <strong>Lima Apps</strong>
+      </p>
+
+    </div>
+
+    <article class="card">
+
+      <!-- COMO SOLICITAR -->
+
+      <section>
+
+        <h2>Como solicitar a exclusão</h2>
+
+        <p>
+          Você pode solicitar a exclusão de sua conta vinculada
+          ao aplicativo Agenda de Serviços e Clientes e dos dados
+          pessoais associados, mesmo que não tenha mais
+          o aplicativo instalado.
+        </p>
+
+        <ol>
+          <li>
+            Clique no botão
+            <strong>Solicitar exclusão por e-mail</strong>
+            abaixo.
+          </li>
+
+          <li>
+            Envie a mensagem para
+            <strong>limaapps@hotmail.com</strong>
+            usando, de preferência, o endereço de e-mail
+            vinculado à conta utilizada no aplicativo.
+          </li>
+
+          <li>
+            Informe que deseja a
+            <strong>
+              exclusão da conta do Agenda de Serviços
+              e Clientes e dos dados associados
+            </strong>.
+            Não envie senha ou códigos de autenticação.
+          </li>
+
+          <li>
+            A Lima Apps poderá solicitar uma confirmação
+            de titularidade antes de executar a exclusão,
+            para evitar solicitações indevidas.
+          </li>
+        </ol>
+
+        <a
+          class="action"
+          href="mailto:limaapps@hotmail.com?subject=Solicita%C3%A7%C3%A3o%20de%20exclus%C3%A3o%20de%20conta%20-%20Agenda%20de%20Servi%C3%A7os%20e%20Clientes&amp;body=Ol%C3%A1%2C%20Lima%20Apps.%0A%0ASolicito%20a%20exclus%C3%A3o%20da%20minha%20conta%20do%20aplicativo%20Agenda%20de%20Servi%C3%A7os%20e%20Clientes%20e%20dos%20dados%20pessoais%20associados.%0A%0AE-mail%20vinculado%20%C3%A0%20conta%3A%20%0A%0AObrigado.">
+          Solicitar exclusão por e-mail
+        </a>
+
+        <p class="small">
+          Se o botão não abrir seu aplicativo de e-mail,
+          escreva diretamente para
+          <a href="mailto:limaapps@hotmail.com">
+            limaapps@hotmail.com
+          </a>
+          com o assunto
+          "Exclusão de conta - Agenda de Serviços e Clientes".
+        </p>
+
+      </section>
+
+      <!-- DADOS EXCLUÍDOS -->
+
+      <section>
+
+        <h2>Quais dados serão excluídos?</h2>
+
+        <p>
+          Após a confirmação e validação da solicitação,
+          a exclusão da conta do aplicativo deverá
+          abranger os dados pessoais associados a ela,
+          quando armazenados sob controle da Lima Apps,
+          incluindo, conforme existirem:
+        </p>
+
+        <ul>
+          <li>
+            Cadastro e identificadores da conta do aplicativo,
+            inclusive autenticação associada no Firebase;
+          </li>
+
+          <li>
+            Perfil profissional, como nome, telefone,
+            e-mail, endereço, documento e logotipo;
+          </li>
+
+          <li>
+            Backups em nuvem de cadastros de clientes,
+            agenda, histórico, serviços, orçamentos,
+            recibos e ordens de serviço;
+          </li>
+
+          <li>
+            Fotografias, arquivos e documentos vinculados
+            à conta que estejam nos backups
+            gerenciados pelo aplicativo;
+          </li>
+
+          <li>
+            Registros de orçamentos e informações associadas
+            à conta armazenados no Firestore, sujeitos
+            à identificação técnica dos respectivos registros;
+          </li>
+
+          <li>
+            Tokens de notificações vinculados à conta,
+            quando aplicável.
+          </li>
+        </ul>
+
+        <p>
+          Também é possível solicitar a exclusão
+          de dados pessoais específicos sem necessariamente
+          pedir a exclusão integral da conta,
+          quando tecnicamente possível e legalmente aplicável.
+        </p>
+
+      </section>
+
+      <!-- DADOS MANTIDOS -->
+
+      <section>
+
+        <h2>Quais dados podem ser mantidos?</h2>
+
+        <p>
+          Determinadas informações poderão ser conservadas
+          somente quando houver uma justificativa legal válida,
+          como cumprimento de obrigação legal ou regulatória,
+          prevenção de fraudes, exercício regular de direitos
+          ou segurança.
+        </p>
+
+        <p>
+          Nesses casos, a retenção deverá ser limitada
+          aos dados necessários e ao prazo exigido
+          pela finalidade aplicável.
+        </p>
+
+        <p>
+          Arquivos exportados pelo usuário,
+          documentos já enviados a clientes,
+          mensagens recebidas por WhatsApp ou e-mail
+          e cópias mantidas por terceiros
+          não são automaticamente apagados
+          com a exclusão da conta.
+        </p>
+
+        <p>
+          Dados de publicidade, analytics ou diagnóstico
+          processados de maneira independente por
+          fornecedores externos estão sujeitos às regras
+          e prazos de retenção desses serviços,
+          quando aplicáveis.
+        </p>
+
+      </section>
+
+      <!-- RETENÇÃO -->
+
+      <section>
+
+        <h2>Período de armazenamento e exclusão</h2>
+
+        <p>
+          Os registros associados à conta permanecem
+          enquanto forem necessários às funcionalidades
+          utilizadas e não houver solicitação válida
+          de exclusão, observadas as obrigações legais.
+        </p>
+
+        <p>
+          Quando houver solicitação, os dados elegíveis
+          deverão ser removidos após a verificação
+          de titularidade e a conclusão
+          do processamento técnico.
+        </p>
+
+        <p>
+          <strong>
+            Não há um prazo fixo de retenção adicional
+            informado para todas as categorias.
+          </strong>
+        </p>
+
+        <p>
+          Caso dados específicos precisem ser conservados
+          por exigência legal ou técnica,
+          a Lima Apps informará, em resposta à solicitação,
+          quais dados serão mantidos,
+          a justificativa e o prazo
+          ou critério de retenção aplicável.
+        </p>
+
+        <div class="note">
+          <p>
+            <strong>Importante:</strong>
+            a exclusão da conta não apaga automaticamente
+            dados armazenados apenas no dispositivo,
+            backups fora do controle do aplicativo
+            ou documentos anteriormente compartilhados.
+            Para remover dados locais, o usuário também
+            poderá apagar os registros no aplicativo
+            ou remover os dados locais por meio
+            das configurações do Android.
+          </p>
+        </div>
+
+      </section>
+
+      <!-- CONTA GOOGLE -->
+
+      <section>
+
+        <h2>Preciso excluir minha conta Google?</h2>
+
+        <p>
+          Não. A solicitação se refere à conta
+          e aos dados associados ao aplicativo
+          <strong>Agenda de Serviços e Clientes</strong>.
+        </p>
+
+        <p>
+          Ela não implica a exclusão da conta
+          Google pessoal utilizada para autenticação.
+        </p>
+
+      </section>
+
+      <!-- CONTATO -->
+
+      <section>
+
+        <h2>Contato e Política de Privacidade</h2>
+
+        <p>
+          Desenvolvedor: <strong>Lima Apps</strong>
+        </p>
+
+        <p>
+          Aplicativo:
+          <strong>Agenda de Serviços e Clientes</strong>
+        </p>
+
+        <p>
+          E-mail de privacidade e exclusão:
+          <a href="mailto:limaapps@hotmail.com">
+            limaapps@hotmail.com
+          </a>
+        </p>
+
+        <p>
+          Confira também a
+          <a href="https://limaapps.com.br/politica-agenda.html">
+            Política de Privacidade do aplicativo
+          </a>.
+        </p>
+
+      </section>
+
+    </article>
+
+    <!-- VOLTAR -->
+
+    <div class="back">
+      <p>
+        <a href="https://limaapps.com.br">
+          Voltar ao site Lima Apps
+        </a>
+      </p>
+    </div>
+
+  </main>
+
+  <!-- RODAPÉ -->
+
+  <footer>
+    © 2026 Lima Apps. Todos os direitos reservados.
+  </footer>
+
+</body>
+</html>
