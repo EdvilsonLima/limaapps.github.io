@@ -1,1244 +1,1305 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-
-  <meta charset="UTF-8">
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0">
-
-  <title>
-    Política de Privacidade | CNH - Teórico e Prático
-  </title>
-
-  <meta
-    name="description"
-    content="Política de Privacidade do aplicativo CNH - Teórico e Prático.">
-
-  <meta
-    name="author"
-    content="Lima Apps">
-
-  <meta
-    name="robots"
-    content="index, follow">
-
-  <meta
-    name="theme-color"
-    content="#020617">
-
-  <link
-    rel="canonical"
-    href="https://www.limaapps.com.br/politica-cnh.html">
-
-
-  <!-- =========================
-       FAVICON
-  ========================== -->
-
-  <link
-    rel="icon"
-    type="image/png"
-    href="assets/lima-apps-icon.png">
-
-  <link
-    rel="apple-touch-icon"
-    href="assets/lima-apps-icon.png">
-
-
-  <style>
-
-    /* =========================
-       CONFIGURAÇÕES GERAIS
-    ========================== */
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-
-    body {
-      min-height: 100vh;
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
-      background: #020617;
-      color: #f8fafc;
-
-      line-height: 1.7;
-
-      -webkit-font-smoothing: antialiased;
-    }
-
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-
-    img {
-      display: block;
-      max-width: 100%;
-    }
-
-
-    .container {
-      width: min(920px, 92%);
-      margin: 0 auto;
-    }
-
-
-    /* =========================
-       HEADER
-    ========================== */
-
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-
-      background:
-        rgba(
-          2,
-          6,
-          23,
-          0.95
-        );
-
-      backdrop-filter: blur(12px);
-
-      border-bottom:
-        1px solid
-        rgba(
-          148,
-          163,
-          184,
-          0.12
-        );
-    }
-
-
-    .navbar {
-      width: min(1180px, 92%);
-      min-height: 72px;
-
-      margin: 0 auto;
-
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-
-      gap: 30px;
-    }
-
-
-    /* =========================
-       LOGO
-    ========================== */
-
-    .logo {
-      display: flex;
-      align-items: center;
-
-      gap: 11px;
-
-      color: #f8fafc;
-
-      font-size: 1.4rem;
-      font-weight: 700;
-    }
-
-
-    .logo img {
-      width: 42px;
-      height: 42px;
-
-      object-fit: contain;
-
-      border-radius: 10px;
-    }
-
-
-    .logo span {
-      color: #38bdf8;
-    }
-
-
-    /* =========================
-       NAVEGAÇÃO
-    ========================== */
-
-    nav {
-      display: flex;
-      align-items: center;
-
-      gap: 25px;
-    }
-
-
-    nav a {
-      color: #cbd5e1;
-
-      font-size: 0.92rem;
-
-      transition:
-        color
-        0.2s ease;
-    }
-
-
-    nav a:hover {
-      color: #38bdf8;
-    }
-
-
-    /* =========================
-       HERO
-    ========================== */
-
-    .hero {
-      position: relative;
-
-      overflow: hidden;
-
-      padding:
-        85px
-        0
-        60px;
-
-      text-align: center;
-    }
-
-
-    .hero::before {
-      content: "";
-
-      position: absolute;
-
-      width: 500px;
-      height: 500px;
-
-      top: -330px;
-      left: 50%;
-
-      transform: translateX(-50%);
-
-      background:
-        rgba(
-          56,
-          189,
-          248,
-          0.14
-        );
-
-      filter: blur(100px);
-
-      border-radius: 50%;
-
-      pointer-events: none;
-    }
-
-
-    .hero-content {
-      position: relative;
-      z-index: 1;
-    }
-
-
-    .app-icon {
-      width: 86px;
-      height: 86px;
-
-      margin:
-        0 auto
-        24px;
-
-      object-fit: cover;
-
-      background: #1e293b;
-
-      border-radius: 20px;
-
-      box-shadow:
-        0
-        18px
-        40px
-        rgba(
-          0,
-          0,
-          0,
-          0.35
-        );
-    }
-
-
-    .hero-label {
-      display: inline-block;
-
-      margin-bottom: 15px;
-
-      color: #38bdf8;
-
-      font-size: 0.82rem;
-      font-weight: 700;
-
-      text-transform: uppercase;
-
-      letter-spacing: 1.5px;
-    }
-
-
-    .hero h1 {
-      margin: 0;
-
-      color: #f8fafc;
-
-      font-size:
-        clamp(
-          2rem,
-          5vw,
-          3.4rem
-        );
-
-      line-height: 1.15;
-    }
-
-
-    .app-name {
-      margin-top: 18px;
-
-      color: #cbd5e1;
-
-      font-size: 1.08rem;
-      font-weight: 700;
-    }
-
-
-    .updated {
-      margin-top: 8px;
-
-      color: #64748b;
-
-      font-size: 0.9rem;
-    }
-
-
-    /* =========================
-       CONTEÚDO DA POLÍTICA
-    ========================== */
-
-    .privacy-content {
-      padding-bottom: 90px;
-    }
-
-
-    .privacy-card {
-      padding: 42px;
-
-      background: #0f172a;
-
-      border:
-        1px solid
-        #1e293b;
-
-      border-radius: 20px;
-
-      box-shadow:
-        0
-        20px
-        50px
-        rgba(
-          0,
-          0,
-          0,
-          0.2
-        );
-    }
-
-
-    .privacy-card section {
-      padding: 0;
-      margin-bottom: 34px;
-    }
-
-
-    .privacy-card section:last-child {
-      margin-bottom: 0;
-    }
-
-
-    .privacy-card h2 {
-      margin-top: 0;
-      margin-bottom: 12px;
-
-      color: #f8fafc;
-
-      font-size: 1.35rem;
-      line-height: 1.35;
-    }
-
-
-    .privacy-card p {
-      margin-bottom: 14px;
-
-      color: #cbd5e1;
-    }
-
-
-    .privacy-card p:last-child {
-      margin-bottom: 0;
-    }
-
-
-    .privacy-card ul {
-      margin:
-        8px
-        0
-        16px
-        22px;
-
-      color: #cbd5e1;
-    }
-
-
-    .privacy-card li {
-      margin-bottom: 6px;
-    }
-
-
-    .privacy-card strong {
-      color: #f8fafc;
-    }
-
-
-    .privacy-card a {
-      color: #38bdf8;
-
-      font-weight: 600;
-
-      word-break: break-word;
-    }
-
-
-    .privacy-card a:hover {
-      color: #7dd3fc;
-      text-decoration: underline;
-    }
-
-
-    /* =========================
-       CONTATO
-    ========================== */
-
-    .contact {
-      padding: 20px;
-
-      margin-top: 16px;
-
-      background:
-        rgba(
-          56,
-          189,
-          248,
-          0.07
-        );
-
-      border:
-        1px solid
-        rgba(
-          56,
-          189,
-          248,
-          0.2
-        );
-
-      border-radius: 12px;
-
-      color: #cbd5e1;
-    }
-
-
-    .contact strong {
-      display: inline-block;
-      margin-bottom: 5px;
-
-      color: #f8fafc;
-    }
-
-
-    /* =========================
-       BOTÃO VOLTAR
-    ========================== */
-
-    .back-wrapper {
-      margin-top: 35px;
-
-      text-align: center;
-    }
-
-
-    .back {
-      min-height: 48px;
-
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-
-      padding:
-        0
-        24px;
-
-      background:
-        linear-gradient(
-          135deg,
-          #38bdf8,
-          #2563eb
-        );
-
-      border-radius: 10px;
-
-      color: #ffffff;
-
-      font-size: 0.92rem;
-      font-weight: 700;
-
-      transition:
-        transform
-        0.2s ease,
-        box-shadow
-        0.2s ease;
-    }
-
-
-    .back:hover {
-      color: #ffffff;
-      text-decoration: none;
-
-      transform: translateY(-2px);
-
-      box-shadow:
-        0
-        10px
-        25px
-        rgba(
-          37,
-          99,
-          235,
-          0.3
-        );
-    }
-
-
-    /* =========================
-       FOOTER
-    ========================== */
-
-    footer {
-      padding:
-        35px
-        0;
-
-      border-top:
-        1px solid
-        #1e293b;
-
-      text-align: center;
-
-      color: #64748b;
-
-      font-size: 0.85rem;
-    }
-
-
-    /* =========================
-       RESPONSIVO
-    ========================== */
-
-    @media (
-      max-width:
-      680px
-    ) {
-
-      .navbar {
-        min-height: 64px;
-      }
-
-
-      .logo {
-        font-size: 1.2rem;
-      }
-
-
-      .logo img {
-        width: 38px;
-        height: 38px;
-      }
-
-
-      nav a:not(:last-child) {
-        display: none;
-      }
-
-
-      .hero {
-        padding:
-          65px
-          0
-          45px;
-      }
-
-
-      .app-icon {
-        width: 72px;
-        height: 72px;
-      }
-
-
-      .app-name {
-        font-size: 1rem;
-      }
-
-
-      .privacy-card {
-        padding:
-          28px
-          22px;
-      }
-
-
-      .privacy-card h2 {
-        font-size: 1.2rem;
-      }
-
-
-      .back {
-        width: 100%;
-      }
-
-    }
-
-  </style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Política de Privacidade do aplicativo CNH Teórico Prático e Simulado, desenvolvido pela LimaApps.">
+
+    <meta name="theme-color" content="#123b73">
+
+    <title>Política de Privacidade | CNH Teórico Prático e Simulado</title>
+
+    <style>
+        :root {
+            --primary: #123b73;
+            --secondary: #1976d2;
+            --background: #f1f5f9;
+            --surface: #ffffff;
+            --text: #334155;
+            --muted: #64748b;
+            --border: #e2e8f0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: var(--background);
+            color: var(--text);
+            line-height: 1.75;
+            font-size: 16px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #102d54, #1565c0);
+            color: #ffffff;
+            padding: 48px 24px 75px;
+            text-align: center;
+        }
+
+        .brand {
+            display: inline-block;
+            font-size: 15px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: clamp(28px, 5vw, 40px);
+            line-height: 1.2;
+            margin: 0 0 14px;
+        }
+
+        header p {
+            color: #e2ecfa;
+            margin: 8px 0;
+        }
+
+        .updated {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.14);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            padding: 7px 16px;
+            border-radius: 30px;
+            font-size: 13px;
+            margin-top: 16px;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: -36px auto 40px;
+            padding: 0 20px;
+            position: relative;
+        }
+
+        main {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            padding: 40px;
+            box-shadow: 0 8px 30px rgba(15, 23, 42, 0.07);
+        }
+
+        section {
+            padding: 24px 0;
+            border-bottom: 1px solid var(--border);
+            scroll-margin-top: 20px;
+        }
+
+        section:last-child {
+            border-bottom: none;
+        }
+
+        h2 {
+            color: var(--primary);
+            font-size: 23px;
+            line-height: 1.4;
+            margin: 0 0 16px;
+        }
+
+        h3 {
+            color: var(--primary);
+            font-size: 18px;
+            margin: 24px 0 10px;
+        }
+
+        p {
+            margin: 12px 0;
+        }
+
+        ul, ol {
+            padding-left: 24px;
+        }
+
+        li {
+            margin: 7px 0;
+        }
+
+        a {
+            color: #125eaa;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            overflow-wrap: anywhere;
+        }
+
+        a:hover {
+            color: #0d315e;
+        }
+
+        a:focus-visible {
+            outline: 3px solid #1976d2;
+            outline-offset: 4px;
+        }
+
+        .notice {
+            background: #f0f7ff;
+            border: 1px solid #c8ddf5;
+            border-left: 5px solid #1976d2;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 24px;
+        }
+
+        .notice strong {
+            color: var(--primary);
+        }
+
+        .notice p:last-child {
+            margin-bottom: 0;
+        }
+
+        .index {
+            background: #f8fafc;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 24px 0;
+        }
+
+        .index h2 {
+            font-size: 19px;
+        }
+
+        .index ol {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 36px;
+            margin-bottom: 0;
+        }
+
+        .index a {
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        .services {
+            list-style: none;
+            padding: 0;
+        }
+
+        .services li {
+            background: #f8fafc;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 16px;
+            margin: 12px 0;
+        }
+
+        .services strong {
+            color: var(--primary);
+        }
+
+        .services p {
+            margin: 6px 0;
+        }
+
+        .button {
+            display: inline-block;
+            background: #1565c0;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            margin: 8px 0;
+        }
+
+        .button:hover {
+            background: #104f98;
+            color: #ffffff;
+        }
+
+        .contact {
+            background: #f8fafc;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 22px;
+        }
+
+        footer {
+            text-align: center;
+            color: var(--muted);
+            padding: 10px 20px 40px;
+            font-size: 14px;
+        }
+
+        footer a {
+            display: inline-block;
+            margin: 5px 8px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 32px 18px 60px;
+            }
+
+            .container {
+                padding: 0 12px;
+            }
+
+            main {
+                padding: 22px 18px;
+                border-radius: 12px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            .index ol {
+                grid-template-columns: 1fr;
+            }
+
+            .notice,
+            .index,
+            .contact {
+                padding: 18px;
+            }
+
+            .button {
+                display: block;
+                width: 100%;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+        }
+
+        @media print {
+            body {
+                background: #ffffff;
+                font-size: 12pt;
+            }
+
+            header {
+                background: #ffffff;
+                color: #123b73;
+                padding: 20px;
+            }
+
+            header p,
+            .updated {
+                color: #334155;
+            }
+
+            .container {
+                margin: 0 auto;
+                padding: 0;
+            }
+
+            main {
+                box-shadow: none;
+                border: none;
+                padding: 0;
+            }
+
+            .index {
+                display: none;
+            }
+
+            h2, h3 {
+                break-after: avoid;
+            }
+        }
+    </style>
 </head>
-
 
 <body>
 
+<header>
 
-  <!-- =========================
-       HEADER
-  ========================== -->
+    <div class="brand">LimaApps</div>
 
-  <header>
+    <h1>Política de Privacidade</h1>
 
-    <div class="navbar">
+    <p>CNH Teórico Prático e Simulado</p>
 
-      <a
-        href="index.html"
-        class="logo"
-        aria-label="Lima Apps - Página inicial">
+    <div class="updated">
+        Última atualização:
+        <time datetime="2026-11-28">
+            28 de novembro de 2026
+        </time>
+    </div>
 
-        <img
-          src="assets/lima-apps-icon.png"
-          alt="Lima Apps">
+</header>
 
-        Lima
+<div class="container">
 
-        <span>
-          Apps
-        </span>
+<main>
 
-      </a>
+    <div class="notice">
 
+        <strong>Transparência e privacidade</strong>
 
-      <nav>
+        <p>
+            Esta Política de Privacidade descreve como o aplicativo
+            CNH Teórico Prático e Simulado, desenvolvido pela LimaApps,
+            acessa, coleta, utiliza, armazena, protege e compartilha
+            informações relacionadas à sua utilização.
+        </p>
 
-        <a href="index.html#apps">
-          Aplicativos
-        </a>
-
-        <a href="politicas.html">
-          Políticas
-        </a>
-
-        <a href="index.html#sobre">
-          Sobre
-        </a>
-
-        <a href="mailto:limaapps@hotmail.com">
-          Contato
-        </a>
-
-      </nav>
+        <p>
+            O aplicativo é uma ferramenta educacional independente
+            e não possui vínculo institucional com DETRAN, SENATRAN,
+            CONTRAN, Ministério dos Transportes ou outros órgãos
+            governamentais.
+        </p>
 
     </div>
 
-  </header>
+    <nav class="index" aria-label="Índice da política">
 
+        <h2>Índice da política</h2>
 
-  <main>
+        <ol>
+            <li><a href="#informacoes">Informações do usuário</a></li>
+            <li><a href="#local">Armazenamento local</a></li>
+            <li><a href="#analytics">Firebase Analytics</a></li>
+            <li><a href="#publicidade">Publicidade e AdMob</a></li>
+            <li><a href="#firestore">Cloud Firestore</a></li>
+            <li><a href="#assinatura">Assinatura CNH PRO</a></li>
+            <li><a href="#finalidades">Finalidades do tratamento</a></li>
+            <li><a href="#terceiros">Serviços de terceiros</a></li>
+            <li><a href="#compartilhamento">Compartilhamento de dados</a></li>
+            <li><a href="#transferencia">Transferência internacional</a></li>
+            <li><a href="#retencao">Retenção e exclusão de dados</a></li>
+            <li><a href="#seguranca">Segurança das informações</a></li>
+            <li><a href="#direitos">Direitos do usuário</a></li>
+            <li><a href="#criancas">Crianças e adolescentes</a></li>
+            <li><a href="#links">Links externos</a></li>
+            <li><a href="#alteracoes">Alterações nesta política</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ol>
 
+    </nav>
 
-    <!-- =========================
-         HERO
-    ========================== -->
+    <section id="informacoes">
 
-    <section class="hero">
+        <h2>1. Informações do usuário</h2>
 
-      <div class="container hero-content">
-
-        <img
-          src="assets/cnh.png"
-          alt="Ícone do aplicativo CNH - Teórico e Prático"
-          class="app-icon">
-
-        <span class="hero-label">
-          Política de Privacidade
-        </span>
-
-        <h1>
-          Política de Privacidade
-        </h1>
-
-        <p class="app-name">
-          Aplicativo CNH - Teórico e Prático
+        <p>
+            O aplicativo CNH Teórico Prático e Simulado não exige
+            a criação de conta, login ou cadastro próprio para
+            utilização de seus recursos de estudo.
         </p>
 
-        <p class="updated">
-          Última atualização: 15/07/2026
+        <p>
+            Para utilização normal do aplicativo, não são
+            solicitadas diretamente informações como:
         </p>
 
-      </div>
+        <ul>
+            <li>Nome completo;</li>
+            <li>Endereço de e-mail;</li>
+            <li>Número de telefone;</li>
+            <li>CPF;</li>
+            <li>Número da Carteira Nacional de Habilitação;</li>
+            <li>Documentos pessoais;</li>
+            <li>Endereço residencial.</li>
+        </ul>
+
+        <p>
+            Entretanto, serviços integrados ao aplicativo podem
+            coletar automaticamente informações técnicas,
+            identificadores e dados relacionados à sua utilização,
+            conforme descrito nesta política.
+        </p>
+
+        <p>
+            Caso o usuário entre em contato com o suporte,
+            poderão ser tratados o endereço de e-mail, o nome,
+            quando informado, e as demais informações fornecidas
+            voluntariamente para atendimento da solicitação.
+        </p>
 
     </section>
 
-
-    <!-- =========================
-         POLÍTICA
-    ========================== -->
-
-    <div class="privacy-content">
-
-      <div class="container">
-
-        <article class="privacy-card">
-
-
-          <section>
-
-            <p>
-              Esta Política de Privacidade descreve como o aplicativo
-              <strong>CNH - Teórico e Prático</strong> trata informações
-              relacionadas à utilização do aplicativo.
-            </p>
-
-            <p>
-              Ao utilizar o aplicativo, o usuário declara estar ciente das
-              práticas descritas nesta política.
-            </p>
-
-          </section>
-
-
-          <section>
-
-            <h2>
-              1. Informações fornecidas pelo usuário
-            </h2>
-
-            <p>
-              O aplicativo não exige criação de conta, login ou cadastro.
-            </p>
-
-            <p>
-              Não são solicitadas diretamente informações pessoais como:
-            </p>
-
-            <ul>
-
-              <li>
-                Nome;
-              </li>
-
-              <li>
-                Endereço de e-mail;
-              </li>
-
-              <li>
-                Número de telefone;
-              </li>
-
-              <li>
-                CPF ou outros documentos pessoais;
-              </li>
-
-              <li>
-                Endereço residencial.
-              </li>
-
-            </ul>
-
-            <p>
-              As escolhas relacionadas à jornada de habilitação, etapa atual,
-              progresso e preferências de estudo podem ser armazenadas
-              localmente no dispositivo para permitir o funcionamento das
-              funcionalidades do aplicativo.
-            </p>
-
-          </section>
-
-
-          <section>
-
-            <h2>
-              2. Firebase Analytics
-            </h2>
-
-            <p>
-              O aplicativo utiliza o
-              <strong>Google Firebase Analytics</strong>, serviço fornecido
-              pela Google, para compreender como as funcionalidades são
-              utilizadas e melhorar a experiência oferecida aos usuários.
-            </p>
-
-            <p>
-              O Firebase Analytics pode coletar ou processar automaticamente
-              informações como:
-            </p>
-
-            <ul>
-
-              <li>
-                Eventos de interação com o aplicativo;
-              </li>
-
-              <li>
-                Telas e funcionalidades acessadas;
-              </li>
-
-              <li>
-                Tempo e frequência de utilização;
-              </li>
-
-              <li>
-                Identificador da instalação ou instância do aplicativo;
-              </li>
-
-              <li>
-                Modelo e características gerais do dispositivo;
-              </li>
-
-              <li>
-                Sistema operacional e versão do aplicativo;
-              </li>
-
-              <li>
-                Idioma e configurações regionais;
-              </li>
-
-              <li>
-                Informações aproximadas de localização, derivadas do endereço IP;
-              </li>
-
-              <li>
-                Dados técnicos e de diagnóstico relacionados ao funcionamento do aplicativo.
-              </li>
-
-            </ul>
-
-            <p>
-              Essas informações são utilizadas de forma agregada para:
-            </p>
-
-            <ul>
-
-              <li>
-                Medir o uso e o desempenho do aplicativo;
-              </li>
-
-              <li>
-                Identificar as funcionalidades mais utilizadas;
-              </li>
-
-              <li>
-                Aprimorar o conteúdo e a experiência de estudo;
-              </li>
-
-              <li>
-                Entender problemas de navegação ou usabilidade;
-              </li>
-
-              <li>
-                Planejar melhorias e novas funcionalidades.
-              </li>
-
-            </ul>
-
-            <p>
-              O desenvolvedor não utiliza o Firebase Analytics para solicitar
-              ou registrar diretamente nome, e-mail, telefone ou CPF do usuário.
-            </p>
-
-          </section>
-
-
-          <section>
-
-            <h2>
-              3. Uso de anúncios
-            </h2>
-
-            <p>
-              O aplicativo utiliza o <strong>Google AdMob</strong> para a
-              exibição de anúncios, incluindo anúncios em formato de banner.
-            </p>
-
-            <p>
-              O Google AdMob pode coletar ou processar automaticamente
-              informações necessárias para exibir, medir, limitar e proteger
-              anúncios, tais como:
-            </p>
-
-            <ul>
-
-              <li>
-                Identificadores do dispositivo ou de publicidade;
-              </li>
-
-              <li>
-                Endereço IP;
-              </li>
-
-              <li>
-                Interações com anúncios;
-              </li>
-
-              <li>
-                Informações gerais sobre o dispositivo;
-              </li>
-
-              <li>
-                Dados de uso do aplicativo;
-              </li>
-
-              <li>
-                Informações aproximadas de localização.
-              </li>
-
-            </ul>
-
-            <p>
-              Dependendo das configurações do dispositivo, do consentimento do
-              usuário e da legislação aplicável, os anúncios podem ser
-              personalizados ou não personalizados.
-            </p>
-
-          </section>
-
-
-          <section>
-
-            <h2>
-              4. Serviços de terceiros
-            </h2>
-
-            <p>
-              O aplicativo utiliza serviços fornecidos pela Google, incluindo:
-            </p>
-
-            <ul>
-
-              <li>
-                Google Firebase Analytics;
-              </li>
-
-              <li>
-                Google AdMob;
-              </li>
-
-              <li>
-                Serviços relacionados do Google Play.
-              </li>
-
-            </ul>
-
-            <p>
-              Esses fornecedores podem processar informações de acordo com
-              suas próprias políticas, termos e medidas de segurança.
-            </p>
-
-            <p>
-              Para saber mais, consulte a
-
-              <a
-                href="https://policies.google.com/privacy"
-                target="_blank"
-                rel="noopener noreferrer">
-
-                Política de Privacidade do Google
-
-              </a>.
-            </p>
-
-            <p>
-              Também é possível consultar as informações de
-
-              <a
-                href="https://firebase.google.com/support/privacy"
-                target="_blank"
-                rel="noopener noreferrer">
-
-                Privacidade e Segurança do Firebase
-
-              </a>.
-            </p>
-
-          </section>
-
-
-          <section>
-
-            <h2>
-              5. Compartilhamento de informações
-            </h2>
-
-            <p>
-              O desenvolvedor não vende nem comercializa informações pessoais
-              dos usuários.
-            </p>
-
-            <p>
-              Determinadas informações técnicas e de uso podem ser transmitidas
-              aos fornecedores responsáveis pelos serviços de análise,
-              publicidade e infraestrutura descritos nesta política.
-            </p>
-
-            <p>
-              As informações também poderão ser disponibilizadas quando isso
-              for necessário para:
-            </p>
-
-            <ul>
-
-              <li>
-                Cumprir obrigações legais ou regulatórias;
-              </li>
-
-              <li>
-                Atender solicitações legítimas de autoridades;
-              </li>
-
-              <li>
-                Proteger os direitos, a segurança e a integridade do aplicativo e de seus usuários;
-              </li>
-
-              <li>
-                Prevenir fraudes, abusos ou atividades maliciosas.
-              </li>
-
-            </ul>
-
-          </section>
-
-
-          <section>
-
-            <h2>
-              6. Armazenamento e retenção
-            </h2>
-
-            <p>
-              As informações utilizadas para personalizar a jornada,
-              acompanhar o progresso e manter preferências podem permanecer
-              armazenadas localmente no dispositivo.
-            </p>
-
-            <p>
-              Esses dados locais podem ser removidos ao apagar os dados do
-              aplicativo ou desinstalá-lo.
-            </p>
-
-            <p>
-              Os dados processados pelo Firebase Analytics e pelo Google AdMob
-              estão sujeitos aos períodos de retenção e às práticas estabelecidas
-              pela Google e às configurações adotadas pelo desenvolvedor nos
-              respectivos serviços.
-            </p>
-
-          </section>
-
-
-          <section>
-
-            <h2>
-              7. Segurança
-            </h2>
-
-            <p>
-              São adotadas medidas técnicas e organizacionais razoáveis para
-              proteger as informações relacionadas ao aplicativo.
-            </p>
-
-            <p>
-              Entretanto, nenhum método de transmissão ou armazenamento
-              eletrônico pode garantir segurança absoluta.
-            </p>
-
-          </section>
-
-
-          <section>
-
-            <h2>
-              8. Privacidade de crianças e adolescentes
-            </h2>
-
-            <p>
-              O aplicativo é destinado a pessoas interessadas no processo de
-              obtenção ou alteração da Carteira Nacional de Habilitação.
-            </p>
-
-            <p>
-              O aplicativo não solicita conscientemente informações pessoais
-              diretamente de crianças. Caso um responsável identifique uma
-              situação envolvendo dados pessoais de uma criança, poderá entrar
-              em contato para análise e adoção das medidas cabíveis.
-            </p>
-
-          </section>
-
-
-          <section>
-
-            <h2>
-              9. Direitos do usuário
-            </h2>
-
-            <p>
-              Conforme a legislação aplicável, incluindo a Lei Geral de
-              Proteção de Dados Pessoais – LGPD, o usuário poderá solicitar
-              esclarecimentos sobre o tratamento de informações relacionado ao
-              aplicativo.
-            </p>
-
-            <p>
-              Como o aplicativo não possui conta ou cadastro, pode não ser
-              possível associar os dados analíticos a uma pessoa específica
-              apenas com base em uma solicitação por nome ou e-mail.
-            </p>
-
-            <p>
-              O usuário também pode limitar determinadas formas de coleta por
-              meio das configurações de privacidade, publicidade e permissões
-              disponíveis em seu dispositivo.
-            </p>
-
-          </section>
-
-
-          <section>
-
-            <h2>
-              10. Alterações nesta política
-            </h2>
-
-            <p>
-              Esta Política de Privacidade poderá ser atualizada para refletir
-              alterações no aplicativo, nos serviços utilizados ou na
-              legislação aplicável.
-            </p>
-
-            <p>
-              A data da última atualização será sempre indicada no início
-              desta página.
-            </p>
-
-          </section>
-
-
-          <section>
-
-            <h2>
-              11. Contato
-            </h2>
-
-            <p>
-              Para dúvidas, solicitações ou esclarecimentos relacionados a
-              esta Política de Privacidade, entre em contato:
-            </p>
-
-            <div class="contact">
-
-              <strong>
-                Lima Apps
-              </strong>
-
-              <br>
-
-              E-mail:
-
-              <a href="mailto:limaapps@hotmail.com">
+    <section id="local">
+
+        <h2>2. Armazenamento local</h2>
+
+        <p>
+            O aplicativo poderá armazenar informações diretamente
+            no dispositivo para permitir o funcionamento de seus
+            recursos, preservar preferências e melhorar a
+            experiência de utilização.
+        </p>
+
+        <p>
+            Essas informações poderão incluir:
+        </p>
+
+        <ul>
+            <li>Preferências e configurações do aplicativo;</li>
+            <li>Escolhas relacionadas à jornada de habilitação;</li>
+            <li>Progresso nos conteúdos de estudo;</li>
+            <li>Histórico e resultados de simulados;</li>
+            <li>Questões respondidas e revisão de erros;</li>
+            <li>Preferências de aparência;</li>
+            <li>Controle de atualizações visualizadas;</li>
+            <li>Informações necessárias para reconhecer o benefício PRO.</li>
+        </ul>
+
+        <p>
+            Informações armazenadas exclusivamente no dispositivo
+            não são necessariamente transmitidas ao desenvolvedor.
+            Determinados eventos de utilização e informações
+            relacionadas à assinatura poderão ser processados
+            pelos serviços descritos nas seções seguintes.
+        </p>
+
+        <p>
+            Os dados locais poderão ser removidos por meio das
+            configurações de armazenamento do Android.
+        </p>
+
+        <p>
+            A restauração automática de dados poderá depender
+            das configurações de backup do dispositivo e
+            dos serviços do sistema operacional.
+        </p>
+
+    </section>
+
+    <section id="analytics">
+
+        <h2>3. Google Firebase Analytics</h2>
+
+        <p>
+            O aplicativo utiliza o Google Firebase Analytics,
+            serviço fornecido pela Google, para compreender
+            como suas funcionalidades são utilizadas e
+            identificar oportunidades de melhoria.
+        </p>
+
+        <p>
+            O serviço pode coletar ou processar automaticamente
+            informações como:
+        </p>
+
+        <ul>
+            <li>Identificadores da instalação ou instância do aplicativo;</li>
+            <li>Identificadores do dispositivo e de publicidade, quando aplicável;</li>
+            <li>Telas e funcionalidades acessadas;</li>
+            <li>Eventos de interação com o aplicativo;</li>
+            <li>Tempo e frequência de utilização;</li>
+            <li>Informações sobre sessões e primeiros acessos;</li>
+            <li>Modelo e características gerais do dispositivo;</li>
+            <li>Sistema operacional e versão do aplicativo;</li>
+            <li>Idioma e configurações regionais;</li>
+            <li>Localização aproximada derivada do endereço IP;</li>
+            <li>Informações técnicas e de diagnóstico;</li>
+            <li>Eventos relacionados a compras e assinaturas, quando disponíveis.</li>
+        </ul>
+
+        <p>
+            Também poderão ser registrados eventos relacionados
+            à utilização das funcionalidades de estudo, como
+            início e conclusão de simulados, desempenho,
+            acesso aos conteúdos e visualização de notícias
+            e atualizações.
+        </p>
+
+        <p>
+            Essas informações são utilizadas principalmente
+            para análises estatísticas e melhorias do aplicativo.
+            A LimaApps não utiliza o Firebase Analytics para
+            registrar diretamente nomes, endereços de e-mail,
+            telefones, CPF ou documentos pessoais dos usuários.
+        </p>
+
+        <p>
+            Para conhecer as práticas de tratamento de dados
+            do Firebase, consulte:
+        </p>
+
+        <a href="https://firebase.google.com/support/privacy?hl=pt-br"
+           target="_blank" rel="noopener noreferrer">
+            Privacidade e segurança do Firebase
+        </a>
+
+    </section>
+
+    <section id="publicidade">
+
+        <h2>4. Publicidade e Google AdMob</h2>
+
+        <p>
+            A versão gratuita do aplicativo utiliza o Google AdMob
+            para disponibilizar anúncios publicitários.
+        </p>
+
+        <p>
+            O serviço de publicidade poderá coletar ou compartilhar
+            automaticamente informações necessárias para exibir,
+            medir, limitar e proteger anúncios, incluindo:
+        </p>
+
+        <ul>
+            <li>Identificadores do dispositivo;</li>
+            <li>Identificador de publicidade do Android;</li>
+            <li>Identificadores relacionados à instalação e, quando aplicável, à conta;</li>
+            <li>Endereço IP;</li>
+            <li>Localização aproximada derivada do endereço IP;</li>
+            <li>Informações gerais sobre o dispositivo;</li>
+            <li>Interações com anúncios e funcionalidades;</li>
+            <li>Dados técnicos, de desempenho e diagnóstico.</li>
+        </ul>
+
+        <p>
+            Essas informações poderão ser utilizadas para
+            publicidade, medição de desempenho, análise,
+            prevenção de fraudes e segurança.
+        </p>
+
+        <p>
+            Dependendo das configurações disponíveis, das
+            preferências do usuário, do consentimento aplicável
+            e da legislação vigente, os anúncios poderão ser
+            personalizados ou não personalizados.
+        </p>
+
+        <p>
+            O usuário poderá gerenciar determinadas preferências
+            relacionadas à publicidade por meio das configurações
+            de privacidade do Android e de sua conta Google.
+        </p>
+
+        <p>
+            Quando o CNH PRO estiver disponível e vigente,
+            a assinatura oferecerá a utilização do aplicativo
+            sem anúncios, inclusive durante o período de teste
+            gratuito aplicável.
+        </p>
+
+        <p>
+            A remoção dos anúncios não implica necessariamente
+            a desativação de outros serviços, como o Firebase
+            Analytics e a infraestrutura de disponibilização
+            de conteúdos.
+        </p>
+
+        <a href="https://myadcenter.google.com/"
+           target="_blank" rel="noopener noreferrer">
+            Gerenciar preferências de publicidade do Google
+        </a>
+
+    </section>
+
+    <section id="firestore">
+
+        <h2>5. Cloud Firestore e atualizações sobre CNH</h2>
+
+        <p>
+            O aplicativo utiliza o Cloud Firestore, serviço
+            de infraestrutura do Google Firebase, para
+            disponibilizar notícias, comunicados e atualizações
+            relacionadas à CNH, trânsito, legislação e
+            processos de habilitação.
+        </p>
+
+        <p>
+            Esse recurso permite atualizar determinados
+            conteúdos sem a necessidade de disponibilizar
+            uma nova versão do aplicativo.
+        </p>
+
+        <p>
+            Para realizar a comunicação com os servidores,
+            o serviço poderá processar informações técnicas
+            relacionadas às conexões, solicitações de dados
+            e funcionamento da infraestrutura.
+        </p>
+
+        <p>
+            A consulta de notícias e atualizações não exige
+            que o usuário informe diretamente nome, CPF,
+            número da CNH ou outros documentos pessoais.
+        </p>
+
+        <p>
+            O acesso a notícias e links oficiais também
+            poderá gerar eventos de utilização registrados
+            pelo Firebase Analytics.
+        </p>
+
+    </section>
+
+    <section id="assinatura">
+
+        <h2>6. Google Play Billing e assinatura CNH PRO</h2>
+
+        <p>
+            O aplicativo poderá disponibilizar uma assinatura
+            opcional denominada CNH PRO, destinada à remoção
+            dos anúncios durante o período em que o benefício
+            estiver vigente.
+        </p>
+
+        <p>
+            A versão gratuita continuará disponível sem a
+            necessidade de contratação de assinatura.
+        </p>
+
+        <h3>6.1. Processamento de pagamentos</h3>
+
+        <p>
+            Quando disponível, a contratação da assinatura,
+            o processamento dos pagamentos e as renovações
+            serão realizados pelo sistema de faturamento
+            do Google Play.
+        </p>
+
+        <p>
+            Os dados completos de cartões de crédito,
+            códigos de segurança, senhas bancárias e
+            demais credenciais de pagamento não serão
+            solicitados diretamente pelo aplicativo.
+        </p>
+
+        <p>
+            As informações de pagamento necessárias à compra
+            serão processadas pela Google, conforme seus
+            termos e políticas de privacidade.
+        </p>
+
+        <h3>6.2. Informações relacionadas à assinatura</h3>
+
+        <p>
+            Para reconhecer, validar, restaurar e gerenciar
+            o benefício contratado, poderão ser processadas
+            informações como:
+        </p>
+
+        <ul>
+            <li>Identificador do produto contratado;</li>
+            <li>Identificador do plano e da oferta;</li>
+            <li>Identificadores da transação ou do pedido;</li>
+            <li>Token de compra fornecido pelo Google Play;</li>
+            <li>Estado de validade da assinatura;</li>
+            <li>Informações de data da compra e vigência;</li>
+            <li>Informações relacionadas à renovação, cancelamento ou expiração.</li>
+        </ul>
+
+        <p>
+            Essas informações poderão ser armazenadas
+            localmente ou processadas por serviços de
+            validação de compras, conforme a arquitetura
+            disponibilizada na versão do aplicativo.
+        </p>
+
+        <p>
+            O tratamento dessas informações tem como finalidade
+            reconhecer o direito ao benefício PRO, restaurar
+            compras, verificar sua autenticidade, prevenir
+            fraudes e cumprir obrigações legais aplicáveis.
+        </p>
+
+        <h3>6.3. Gerenciamento da assinatura</h3>
+
+        <p>
+            O usuário poderá gerenciar ou cancelar sua
+            assinatura diretamente pela central de
+            assinaturas do Google Play.
+        </p>
+
+        <p>
+            A desinstalação do aplicativo ou a exclusão
+            dos dados armazenados localmente não cancela
+            automaticamente uma assinatura vigente.
+        </p>
+
+        <a class="button"
+           href="https://play.google.com/store/account/subscriptions"
+           target="_blank" rel="noopener noreferrer">
+            Gerenciar assinaturas no Google Play
+        </a>
+
+        <p>
+            Para informações sobre preço, teste gratuito,
+            renovação e cancelamento, consulte também os
+            Termos de Serviço do aplicativo.
+        </p>
+
+        <a href="https://limaapps.com.br/termo-cnh.html">
+            Consultar Termos de Serviço
+        </a>
+
+    </section>
+
+    <section id="finalidades">
+
+        <h2>7. Finalidades do tratamento de dados</h2>
+
+        <p>
+            As informações descritas nesta política poderão
+            ser utilizadas para as seguintes finalidades:
+        </p>
+
+        <ul>
+            <li>Permitir o funcionamento do aplicativo;</li>
+            <li>Preservar preferências e progresso de estudo;</li>
+            <li>Disponibilizar conteúdos e atualizações;</li>
+            <li>Compreender a utilização das funcionalidades;</li>
+            <li>Aprimorar conteúdos, desempenho e usabilidade;</li>
+            <li>Identificar falhas e problemas técnicos;</li>
+            <li>Exibir e medir anúncios publicitários;</li>
+            <li>Validar e restaurar compras e assinaturas;</li>
+            <li>Prevenir fraudes e atividades abusivas;</li>
+            <li>Atender solicitações de suporte;</li>
+            <li>Cumprir obrigações legais e regulatórias.</li>
+        </ul>
+
+        <p>
+            O tratamento de dados pessoais observará as
+            bases legais aplicáveis previstas na Lei Geral
+            de Proteção de Dados Pessoais (LGPD), incluindo,
+            conforme a finalidade e as circunstâncias:
+        </p>
+
+        <ul>
+            <li>Execução de contrato ou prestação do serviço;</li>
+            <li>Cumprimento de obrigação legal ou regulatória;</li>
+            <li>Legítimo interesse, quando legalmente aplicável;</li>
+            <li>Consentimento, quando necessário.</li>
+        </ul>
+
+    </section>
+
+    <section id="terceiros">
+
+        <h2>8. Serviços de terceiros</h2>
+
+        <p>
+            O aplicativo utiliza ou poderá utilizar os
+            seguintes serviços fornecidos pela Google:
+        </p>
+
+        <ul class="services">
+
+            <li>
+
+                <strong>Google Firebase Analytics</strong>
+
+                <p>
+                    Análise da utilização, comportamento
+                    e desempenho do aplicativo.
+                </p>
+
+                <a href="https://firebase.google.com/support/privacy?hl=pt-br"
+                   target="_blank" rel="noopener noreferrer">
+                    Privacidade do Firebase
+                </a>
+
+            </li>
+
+            <li>
+
+                <strong>Google AdMob</strong>
+
+                <p>
+                    Exibição e gerenciamento de publicidade
+                    na versão gratuita.
+                </p>
+
+                <a href="https://policies.google.com/technologies/partner-sites?hl=pt-BR"
+                   target="_blank" rel="noopener noreferrer">
+                    Como o Google utiliza informações de parceiros
+                </a>
+
+            </li>
+
+            <li>
+
+                <strong>Google Cloud Firestore</strong>
+
+                <p>
+                    Infraestrutura para disponibilização
+                    e atualização de conteúdos.
+                </p>
+
+                <a href="https://firebase.google.com/support/privacy?hl=pt-br"
+                   target="_blank" rel="noopener noreferrer">
+                    Privacidade e segurança do Firebase
+                </a>
+
+            </li>
+
+            <li>
+
+                <strong>Google Play Billing</strong>
+
+                <p>
+                    Processamento de compras, pagamentos,
+                    assinaturas e renovações, quando disponíveis.
+                </p>
+
+                <a href="https://policies.google.com/privacy?hl=pt-BR"
+                   target="_blank" rel="noopener noreferrer">
+                    Política de Privacidade do Google
+                </a>
+
+            </li>
+
+        </ul>
+
+        <p>
+            Esses fornecedores poderão tratar informações
+            conforme suas respectivas políticas, condições
+            contratuais e obrigações legais.
+        </p>
+
+    </section>
+
+    <section id="compartilhamento">
+
+        <h2>9. Compartilhamento de informações</h2>
+
+        <p>
+            A LimaApps não vende diretamente informações
+            pessoais dos usuários.
+        </p>
+
+        <p>
+            Determinadas informações técnicas, identificadores,
+            dados de interação, publicidade e informações
+            relacionadas a compras poderão ser compartilhados
+            ou processados pelos fornecedores responsáveis
+            pelos serviços descritos nesta política.
+        </p>
+
+        <p>
+            O compartilhamento poderá ocorrer para viabilizar
+            funcionalidades, publicidade, análise, infraestrutura,
+            validação de compras e segurança do aplicativo.
+        </p>
+
+        <p>
+            Informações também poderão ser disponibilizadas
+            quando necessário para:
+        </p>
+
+        <ul>
+            <li>Cumprir obrigações legais ou regulatórias;</li>
+            <li>Atender solicitações legítimas de autoridades;</li>
+            <li>Exercer ou proteger direitos;</li>
+            <li>Prevenir fraudes, abusos ou atividades ilícitas;</li>
+            <li>Proteger a segurança dos usuários e do aplicativo.</li>
+        </ul>
+
+    </section>
+
+    <section id="transferencia">
+
+        <h2>10. Transferência internacional de dados</h2>
+
+        <p>
+            Os serviços de terceiros utilizados pelo aplicativo
+            poderão operar infraestrutura tecnológica em
+            diferentes países.
+        </p>
+
+        <p>
+            Dessa forma, determinadas informações poderão
+            ser armazenadas ou processadas fora do Brasil,
+            conforme a infraestrutura e as condições dos
+            respectivos fornecedores.
+        </p>
+
+        <p>
+            As transferências internacionais deverão observar
+            os requisitos legais aplicáveis, incluindo os
+            mecanismos e garantias previstos na Lei Geral
+            de Proteção de Dados Pessoais.
+        </p>
+
+    </section>
+
+    <section id="retencao">
+
+        <h2>11. Retenção e exclusão de dados</h2>
+
+        <h3>11.1. Dados armazenados localmente</h3>
+
+        <p>
+            Preferências, configurações e progresso de estudo
+            poderão permanecer armazenados no dispositivo
+            enquanto forem necessários ao funcionamento do
+            aplicativo ou até que sejam removidos pelo usuário.
+        </p>
+
+        <p>
+            Para excluir os dados locais, o usuário poderá
+            acessar as configurações do Android, selecionar
+            o aplicativo e utilizar a opção de limpeza
+            dos dados de armazenamento.
+        </p>
+
+        <p>
+            A desinstalação normalmente remove os dados
+            privados armazenados pelo aplicativo no dispositivo,
+            ressalvados eventuais backups ou informações
+            mantidas por serviços externos.
+        </p>
+
+        <h3>11.2. Dados de análise e publicidade</h3>
+
+        <p>
+            Os dados processados pelo Firebase Analytics
+            e pelo Google AdMob estão sujeitos às políticas
+            de retenção dos respectivos serviços e às
+            configurações adotadas pelo desenvolvedor.
+        </p>
+
+        <p>
+            Informações estatísticas efetivamente anonimizadas
+            poderão ser mantidas para análise histórica e
+            melhoria do aplicativo.
+        </p>
+
+        <p>
+            Informações sobre os critérios de retenção
+            do Google Analytics podem ser consultadas em:
+        </p>
+
+        <a href="https://support.google.com/analytics/answer/7667196?hl=pt-BR"
+           target="_blank" rel="noopener noreferrer">
+            Retenção de dados do Google Analytics
+        </a>
+
+        <h3>11.3. Dados relacionados às assinaturas</h3>
+
+        <p>
+            Informações relacionadas a compras e assinaturas
+            poderão ser mantidas durante a vigência do
+            benefício e, posteriormente, pelo período
+            necessário para atendimento de solicitações,
+            prevenção de fraudes, exercício de direitos
+            ou cumprimento de obrigações legais.
+        </p>
+
+        <p>
+            Os registros mantidos diretamente pelo Google
+            Play seguirão as políticas e obrigações
+            aplicáveis à plataforma.
+        </p>
+
+        <h3>11.4. Dados relacionados ao suporte</h3>
+
+        <p>
+            Informações fornecidas voluntariamente ao
+            suporte poderão ser mantidas pelo período
+            necessário para atendimento da solicitação
+            e cumprimento de obrigações legais aplicáveis.
+        </p>
+
+        <h3>11.5. Solicitação de exclusão</h3>
+
+        <p>
+            O usuário poderá solicitar informações ou a
+            exclusão de dados pessoais sob responsabilidade
+            da LimaApps por meio do endereço:
+        </p>
+
+        <p>
+            <a href="mailto:limaapps@hotmail.com">
                 limaapps@hotmail.com
-              </a>
+            </a>
+        </p>
 
-            </div>
+        <p>
+            Recomenda-se utilizar o assunto
+            "Privacidade — CNH Teórico Prático e Simulado"
+            e descrever a solicitação.
+        </p>
 
-          </section>
+        <p>
+            Poderão ser necessárias informações adicionais
+            proporcionais à identificação dos dados ou à
+            confirmação da legitimidade da solicitação.
+        </p>
 
+        <p>
+            Como o aplicativo não exige cadastro próprio,
+            determinadas informações técnicas poderão não
+            ser identificáveis apenas pelo nome ou endereço
+            de e-mail do solicitante.
+        </p>
 
-        </article>
+        <p>
+            A exclusão será analisada conforme a viabilidade
+            técnica, a legislação aplicável e as eventuais
+            obrigações de retenção.
+        </p>
 
+        <p>
+            Dados mantidos diretamente por fornecedores
+            externos também poderão estar sujeitos aos
+            mecanismos de exclusão disponibilizados por eles.
+        </p>
 
-        <div class="back-wrapper">
+    </section>
 
-          <a
-            class="back"
-            href="https://limaapps.com.br/">
+    <section id="seguranca">
 
-            Voltar para o site
+        <h2>12. Segurança das informações</h2>
 
-          </a>
+        <p>
+            A LimaApps busca adotar medidas técnicas e
+            organizacionais razoáveis para proteger as
+            informações relacionadas ao aplicativo contra
+            acessos não autorizados, alterações, perdas,
+            divulgações ou utilizações indevidas.
+        </p>
+
+        <p>
+            Os serviços de comunicação utilizados pelo
+            Firebase e Google AdMob empregam protocolos
+            de transmissão protegidos, conforme suas
+            respectivas especificações técnicas.
+        </p>
+
+        <p>
+            O processamento dos pagamentos será realizado
+            pela infraestrutura de faturamento do Google
+            Play, sem solicitação direta de credenciais
+            bancárias pelo aplicativo.
+        </p>
+
+        <p>
+            Entretanto, nenhum método de transmissão ou
+            armazenamento eletrônico pode garantir
+            segurança absoluta.
+        </p>
+
+    </section>
+
+    <section id="direitos">
+
+        <h2>13. Direitos do usuário</h2>
+
+        <p>
+            Conforme a Lei Geral de Proteção de Dados
+            Pessoais (Lei nº 13.709/2018), o usuário
+            poderá exercer, quando aplicáveis, os
+            seguintes direitos:
+        </p>
+
+        <ul>
+            <li>Confirmação da existência de tratamento;</li>
+            <li>Acesso aos dados pessoais;</li>
+            <li>Correção de dados incompletos ou incorretos;</li>
+            <li>Anonimização, bloqueio ou eliminação de dados nas hipóteses legais;</li>
+            <li>Informações sobre compartilhamento de dados;</li>
+            <li>Portabilidade, quando aplicável;</li>
+            <li>Revogação do consentimento, quando utilizado;</li>
+            <li>Oposição ao tratamento nas hipóteses previstas em lei.</li>
+        </ul>
+
+        <p>
+            O usuário poderá encaminhar suas solicitações
+            ao canal de contato informado nesta política.
+        </p>
+
+        <p>
+            Também poderá gerenciar determinadas preferências
+            de privacidade, permissões e publicidade por
+            meio das configurações do dispositivo e dos
+            serviços da Google.
+        </p>
+
+        <p>
+            Para conhecer a legislação brasileira de
+            proteção de dados, consulte:
+        </p>
+
+        <a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm"
+           target="_blank" rel="noopener noreferrer">
+            Lei Geral de Proteção de Dados Pessoais — LGPD
+        </a>
+
+    </section>
+
+    <section id="criancas">
+
+        <h2>14. Privacidade de crianças e adolescentes</h2>
+
+        <p>
+            O aplicativo é destinado principalmente a
+            pessoas interessadas no processo de obtenção,
+            adição ou alteração da Carteira Nacional de
+            Habilitação e no estudo de conteúdos relacionados
+            ao trânsito.
+        </p>
+
+        <p>
+            O aplicativo não é especificamente direcionado
+            ao público infantil e não solicita conscientemente
+            informações pessoais diretamente de crianças.
+        </p>
+
+        <p>
+            Caso seja identificado tratamento de dados
+            pessoais de crianças ou adolescentes, serão
+            observados os requisitos legais aplicáveis,
+            incluindo a proteção de seu melhor interesse.
+        </p>
+
+        <p>
+            Pais ou responsáveis poderão entrar em contato
+            com a LimaApps para solicitar esclarecimentos
+            ou providências relacionadas à privacidade.
+        </p>
+
+    </section>
+
+    <section id="links">
+
+        <h2>15. Links externos e fontes oficiais</h2>
+
+        <p>
+            O aplicativo poderá apresentar links para
+            páginas de órgãos governamentais, fontes de
+            notícias, documentos oficiais e outros
+            serviços externos.
+        </p>
+
+        <p>
+            O acesso a essas páginas estará sujeito às
+            políticas de privacidade e condições de
+            utilização dos respectivos responsáveis.
+        </p>
+
+        <p>
+            A LimaApps não controla diretamente as
+            práticas de tratamento de dados adotadas
+            por sites externos.
+        </p>
+
+    </section>
+
+    <section id="alteracoes">
+
+        <h2>16. Alterações nesta política</h2>
+
+        <p>
+            Esta Política de Privacidade poderá ser
+            atualizada para refletir mudanças nas
+            funcionalidades do aplicativo, nos serviços
+            utilizados, nas práticas de tratamento de
+            dados ou na legislação aplicável.
+        </p>
+
+        <p>
+            A versão atualizada permanecerá disponível
+            nesta página, acompanhada da respectiva
+            data de atualização.
+        </p>
+
+        <p>
+            Alterações relevantes serão comunicadas
+            quando exigido pela legislação ou pelas
+            políticas aplicáveis.
+        </p>
+
+    </section>
+
+    <section id="contato">
+
+        <h2>17. Contato e responsável pelo aplicativo</h2>
+
+        <p>
+            Para dúvidas, solicitações de acesso ou
+            exclusão de dados, exercício de direitos
+            ou esclarecimentos relacionados a esta
+            Política de Privacidade, entre em contato
+            com a LimaApps.
+        </p>
+
+        <div class="contact">
+
+            <p>
+                <strong>Aplicativo:</strong><br>
+                CNH Teórico Prático e Simulado
+            </p>
+
+            <p>
+                <strong>Desenvolvedor e responsável:</strong><br>
+                LimaApps
+            </p>
+
+            <p>
+                <strong>E-mail de suporte e privacidade:</strong><br>
+                <a href="mailto:limaapps@hotmail.com">
+                    limaapps@hotmail.com
+                </a>
+            </p>
+
+            <p>
+                <strong>Site:</strong><br>
+                <a href="https://limaapps.com.br/">
+                    https://limaapps.com.br/
+                </a>
+            </p>
+
+            <a class="button"
+               href="mailto:limaapps@hotmail.com?subject=Privacidade%20-%20CNH">
+                Entrar em contato
+            </a>
 
         </div>
 
+    </section>
 
-      </div>
+</main>
 
-    </div>
+</div>
 
+<footer>
 
-  </main>
+    <p><strong>LimaApps</strong></p>
 
+    <p>
+        Aplicativos independentes para facilitar
+        o seu dia a dia.
+    </p>
 
-  <!-- =========================
-       FOOTER
-  ========================== -->
+    <p>
 
-  <footer>
+        <a href="https://limaapps.com.br/">
+            Página inicial
+        </a>
 
-    <div class="container">
+        <a href="https://limaapps.com.br/termo-cnh.html">
+            Termos de Serviço
+        </a>
 
-      © 2026 Lima Apps.
-      Todos os direitos reservados.
+        <a href="https://play.google.com/store/apps/details?id=com.lima.pratica">
+            Google Play
+        </a>
 
-    </div>
+    </p>
 
-  </footer>
+    <p>© 2026 LimaApps. Todos os direitos reservados.</p>
 
+</footer>
 
 </body>
-
 </html>
